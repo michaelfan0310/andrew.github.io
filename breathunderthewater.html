@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- This is based on github.com's fish here:
+-->
+<html>
+
+<head>
+<title> breathunderthewater</title>
+
+<style>
+  h1{color:rgba(132, 132, 240, 0.733);
+          position: absolute; 
+          top:10%;
+          }
+#coral{position:absolute;
+                 
+                 }
+
+        #mycancas{position:absolute;
+     
+        }
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+  <h1> 
+                          Wearing mask, just like breath under the water
+
+  </h1>
+  
+
+  <p align="center"> 
+	<!--This draws the Canvas on the webpage -->
+      <canvas id="mycanvas"></canvas> 
+
+  <img id="coral"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY9sEn-ufhnqcM1uDtt3WT0L51Wp8JU8iV0w&usqp=CAU" width="1600" height="900" rgba(213,213,213,0.5)></img>
+      
+  </p>
+  
+ 
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+ 
+    <script>
+       var sketchProc = function(processingInstance) {
+        with (processingInstance) {
+           size(1000, 900); 
+           frameRate(20);
+
+           var centerX = 80;
+var centerY = 60;
+var bodyLength = 85;
+var bodyHeight = 50;
+var centX=150;
+var centY=138;
+var bodyL=112;
+var bodyH=66;
+var X=50; var Y=860;
+
+      
+  draw=function() {
+    background(89, 216, 255);
+    
+var bodyColor = color(centerX+20, centerY/2, centerY+150);
+    
+     
+     noStroke();
+fill(bodyColor);
+
+ellipse(centerX, centerY, bodyLength, bodyHeight);
+ellipse(centX, centY, bodyL, bodyH);
+fill(centerX, 229,centerY );
+var tailWidth = bodyLength/4;
+var tailHeight = bodyHeight/2;
+var tailW = bodyL/4;
+var tailH = bodyH/2;
+triangle(centerX-bodyLength/2, centerY,
+         centerX-bodyLength/2-tailWidth, centerY-tailHeight,
+         centerX-bodyLength/2-tailWidth, centerY+tailHeight);
+triangle(centX-bodyL/2, centY,
+         centX-bodyL/2-tailW, centY-tailH,
+         centX-bodyL/2-tailW, centY+tailH);     
+
+fill(33, 33, 33);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+ellipse(centX+bodyL/4, centY, bodyH/5, bodyH/5);
+centerX+=6;centX+=8;
+centerY+=5;centY+=6;
+if (centerX>1000) {centerX=0;}
+if (centX>1000) {centX=0;}
+if (centerY>900){centerY=30;}
+if (centY>900){centY=30;}
+
+fill(245, 208, 208);
+ellipse(centerX+bodyLength/4, centerY, bodyHeight/19, bodyHeight/15);
+rect(centX+bodyL/4, centY, bodyH/25, bodyH/25);
+stroke(242, 237, 242); noFill();ellipse(X,Y,10,10); 
+ellipse(65,Y,10,10); ellipse(Y,X,11,11);ellipse(X,80,8,7);  
+Y-=1;
+X+=0.3;
+
+if (Y<0){Y=900;}
+if (X>1000){X=50;}
+};
+
+
+}};
+
+// Get the canvas that Processing-js will use
+var canvas = document.getElementById("mycanvas"); 
+// Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+var processingInstance = new Processing(canvas, sketchProc); 
+</script>
+
+
+
+
+</body>
+
+</html>
+
