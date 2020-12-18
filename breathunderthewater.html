@@ -5,13 +5,30 @@
         <title>breathunderthewater</title>
 
      
+ <style>
+
+   h1{color:rgb(128, 202, 43);
+
+          position: absolute;
+          top: 10%;
+          left:200px;}
+
+          h2{color:rgb(60, 105, 7);
+
+        position: absolute;
+        top: 25%;
+          right:200px;}
+
+                        </style>  
 
       
         </head>
 
 
     <body>
+   <h1>       Wearing mask, just like breathing under the water.</h1>
 
+   <h2>    你本是鱼，要归于水。于是雨收敛了最初的锋芒，汇成溪流，注入河中..</h2>
 
       
    <p align="center"> 
@@ -39,19 +56,35 @@ var sketchProc = function(processingInstance) {
         var X=50; var Y=1100;
 
         var centerx=900; centx=880;
-        
+        var centery=230; centy=360;
 
           draw=function() {  background(89, 216, 255);
-             var bodyColor = color(centerX/4+150, centerY/3+155, centerX/3+60);
+             var bodyColor = color(centerX/4+85, centerY/3+155, centerX/3+60);
              
              noStroke();
         fill(bodyColor);
         
         ellipse(centerX, centerY, bodyLength, bodyHeight);// =bodyF1
-        ellipse(centX, centY, bodyL, bodyH);
-        fill(centerX, 229,centerY );
-        
+        fill(centx/3,centerX/3, centY/4);
+        ellipse(centX, centY, bodyL, bodyH);  
+        fill(centx/3,centy/5, centY/4);
         ellipse(centX, centerY, bodyLength, bodyHeight);
+
+        fill(centerx/3,centX/5, centY/5 );
+        ellipse(centerx, centery, bodyLength, bodyHeight);// =bodyF3++
+        ellipse(centx, centy, bodyL, bodyH);    
+        fill(centx/3,centX/5, centY/5 );
+        ellipse(centx, centery, bodyLength, bodyHeight);
+
+        var tailWidth = bodyLength/4;
+        var tailHeight = bodyHeight/2;
+        var tailW = bodyL/4;
+        var tailH = bodyH/2; 
+        
+        fill(centerX, 129,centerY );
+         //<!--other 3 fishes!!>
+     
+
         var tailWidth = bodyLength/4;
         var tailHeight = bodyHeight/2;
         var tailW = bodyL/4;
@@ -59,78 +92,71 @@ var sketchProc = function(processingInstance) {
         triangle(centerX-bodyLength/2, centerY,
                  centerX-bodyLength/2-tailWidth, centerY-tailHeight,
                  centerX-bodyLength/2-tailWidth, centerY+tailHeight);//=tail
-                 
+
+
         triangle(centX-bodyL/2, centY,
                  centX-bodyL/2-tailW, centY-tailH,
                  centX-bodyL/2-tailW, centY+tailH);//=tail  
-                 triangle(centX-bodyLength/2, centerY,
+        triangle(centX-bodyLength/2, centerY,
                  centX-bodyLength/2-tailWidth, centerY-tailHeight,
                  centX-bodyLength/2-tailWidth, centerY+tailHeight);
-
-
-
-                 //<!--other 3 fishes!!>
-
-
-         ellipse(centerx, centerY, bodyLength, bodyHeight);// =bodyF1
-        ellipse(centx, centY, bodyL, bodyH);
-        fill(centerx, 229,centerY );
         
-        ellipse(centx, centerY, bodyLength, bodyHeight);
-        var tailWidth = bodyLength/4;
-        var tailHeight = bodyHeight/2;
-        var tailW = bodyL/4;
-        var tailH = bodyH/2;
-        triangle(centerx-bodyLength/2, centerY,
-                 centerx-bodyLength/2-tailWidth, centerY-tailHeight,
-                 centerx-bodyLength/2-tailWidth, centerY+tailHeight);//=tail
+        triangle(centerx-bodyLength/2, centery,
+                 centerx-bodyLength/2-tailWidth, centery-tailHeight,
+                 centerx-bodyLength/2-tailWidth, centery+tailHeight);//=tail
                  
-        triangle(centx-bodyL/2, centY,
-                 centx-bodyL/2-tailW, centY-tailH,
-                 centx-bodyL/2-tailW, centY+tailH);//=tail  
-                 triangle(centx-bodyLength/2, centerY,
-                 centx-bodyLength/2-tailWidth, centerY-tailHeight,
-                 centx-bodyLength/2-tailWidth, centerY+tailHeight);//other 3 here
+        triangle(centx-bodyL/2, centy,
+                 centx-bodyL/2-tailW, centy-tailH,
+                 centx-bodyL/2-tailW, centy+tailH);//=tail  
+        triangle(centx-bodyLength/2, centery,
+                 centx-bodyLength/2-tailWidth, centery-tailHeight,
+                 centx-bodyLength/2-tailWidth, centery+tailHeight);//other 3 here
         // eye
         fill(33, 33, 33);
-         ellipse(centX+bodyL/4, centerY, bodyHeight/5, bodyHeight/5);
+         ellipse(centerX+bodyL/4, centerY, bodyHeight/5, bodyHeight/5);
        
         
         ellipse(centX+bodyL/4, centY, bodyH/5, bodyH/5);
 
-        fill(213,213,213);
-         ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
 
-         fill(33, 33, 33);
-         ellipse(centx+bodyL/4, centerY, bodyHeight/5, bodyHeight/5);
+     
+         ellipse(centX+bodyL/4, centerY, bodyHeight/5, bodyHeight/5);
        
         
-        ellipse(centx+bodyL/4, centY, bodyH/5, bodyH/5);
+        ellipse(centerx+bodyL/4, centery, bodyH/5, bodyH/5);
 
         // eye
        
+     
+         ellipse(centx+bodyLength/4, centy, bodyHeight/5, bodyHeight/5);
 
-        fill(213,213,213);
-         ellipse(centerx+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+       
+         ellipse(centx+bodyLength/4, centery, bodyHeight/5, bodyHeight/5);
 
-         centerx+=4.5; centx+=5.8;
+         
          fill(245, 208, 208);
         ellipse(centerX+bodyLength/4, centerY, bodyHeight/19, bodyHeight/15);
         rect(centX+bodyL/4, centY, bodyH/25, bodyH/25);
 
-        ellipse(centerx+bodyLength/4, centerY, bodyHeight/19, bodyHeight/15);
-        rect(centx+bodyL/4, centY, bodyH/25, bodyH/25);
+        ellipse(centerx+bodyLength/4, centery, bodyHeight/19, bodyHeight/15);
+        rect(centx+bodyL/4, centy, bodyH/25, bodyH/25);
        
        
         centerX+=3;centX+=2.2;
         centerY+=0.8;centY+=1.2;
+
+        centerx+=4.5; centx+=5.8;
+         centery+=1.5; centy+=1.9;
         if (centerX>1500) {centerX=0;}
         if (centX>1500) {centX=0;}
         if (centerY>1000){centerY=30;}
         if (centY>1000){centY=30;}
        
-        if (centerx>1500) {centerx=0;}//for another3
-        if (centx>1500) {centx=0;}
+        if (centerx>1500) {centerx=50;}//for another3
+        if (centx>1500) {centx=80;}
+        if (centery>1000){centery=130;}
+        if (centy>1000){centy=230;}
+       
 
        
         stroke(242, 237, 242); noFill();
@@ -159,6 +185,5 @@ var canvas = document.getElementById("mycanvas");
         
         
       </body>
-
 
 </html>
