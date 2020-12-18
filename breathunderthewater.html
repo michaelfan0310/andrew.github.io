@@ -1,42 +1,20 @@
 <!DOCTYPE html>
-<!-- This is based on github.com's fish here:
--->
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>breathunderthewater</title>
 
-<head>
-<title> breathunderthewater</title>
-
-<style>
-  h1{color:rgba(132, 132, 240, 0.733);
-          position: absolute; 
-          top:10%;
-	  left:300px;
-          }
-#coral{position:absolute;
-                 
-                 }
-
-        #mycancas{position:absolute;
      
-        }
+
+      
+        </head>
 
 
-</style>
+    <body>
 
 
-
-</head>
-
-
-<body>
-
-  <h1> 
-                          Wearing mask, just like breath under the water
-
-  </h1>
-  
-
-  <p align="center"> 
+      
+   <p align="center"> 
     <!--This draws the Canvas on the webpage -->
        <canvas id="mycanvas"></canvas> 
      </p>
@@ -60,11 +38,11 @@ var sketchProc = function(processingInstance) {
         var bodyH=66;
         var X=50; var Y=1100;
 
-  
+        var centerx=900; centx=880;
         
 
           draw=function() {  background(89, 216, 255);
-             var bodyColor = color(centerX/4+150, centerY/3+155, centerY/3+30);
+             var bodyColor = color(centerX/4+150, centerY/3+155, centerX/3+60);
              
              noStroke();
         fill(bodyColor);
@@ -88,6 +66,31 @@ var sketchProc = function(processingInstance) {
                  triangle(centX-bodyLength/2, centerY,
                  centX-bodyLength/2-tailWidth, centerY-tailHeight,
                  centX-bodyLength/2-tailWidth, centerY+tailHeight);
+
+
+
+                 //<!--other 3 fishes!!>
+
+
+         ellipse(centerx, centerY, bodyLength, bodyHeight);// =bodyF1
+        ellipse(centx, centY, bodyL, bodyH);
+        fill(centerx, 229,centerY );
+        
+        ellipse(centx, centerY, bodyLength, bodyHeight);
+        var tailWidth = bodyLength/4;
+        var tailHeight = bodyHeight/2;
+        var tailW = bodyL/4;
+        var tailH = bodyH/2;
+        triangle(centerx-bodyLength/2, centerY,
+                 centerx-bodyLength/2-tailWidth, centerY-tailHeight,
+                 centerx-bodyLength/2-tailWidth, centerY+tailHeight);//=tail
+                 
+        triangle(centx-bodyL/2, centY,
+                 centx-bodyL/2-tailW, centY-tailH,
+                 centx-bodyL/2-tailW, centY+tailH);//=tail  
+                 triangle(centx-bodyLength/2, centerY,
+                 centx-bodyLength/2-tailWidth, centerY-tailHeight,
+                 centx-bodyLength/2-tailWidth, centerY+tailHeight);//other 3 here
         // eye
         fill(33, 33, 33);
          ellipse(centX+bodyL/4, centerY, bodyHeight/5, bodyHeight/5);
@@ -98,7 +101,26 @@ var sketchProc = function(processingInstance) {
         fill(213,213,213);
          ellipse(centerX+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
 
+         fill(33, 33, 33);
+         ellipse(centx+bodyL/4, centerY, bodyHeight/5, bodyHeight/5);
+       
         
+        ellipse(centx+bodyL/4, centY, bodyH/5, bodyH/5);
+
+        // eye
+       
+
+        fill(213,213,213);
+         ellipse(centerx+bodyLength/4, centerY, bodyHeight/5, bodyHeight/5);
+
+         centerx+=4.5; centx+=5.8;
+         fill(245, 208, 208);
+        ellipse(centerX+bodyLength/4, centerY, bodyHeight/19, bodyHeight/15);
+        rect(centX+bodyL/4, centY, bodyH/25, bodyH/25);
+
+        ellipse(centerx+bodyLength/4, centerY, bodyHeight/19, bodyHeight/15);
+        rect(centx+bodyL/4, centY, bodyH/25, bodyH/25);
+       
        
         centerX+=3;centX+=2.2;
         centerY+=0.8;centY+=1.2;
@@ -107,11 +129,10 @@ var sketchProc = function(processingInstance) {
         if (centerY>1000){centerY=30;}
         if (centY>1000){centY=30;}
        
+        if (centerx>1500) {centerx=0;}//for another3
+        if (centx>1500) {centx=0;}
 
-
-        fill(245, 208, 208);
-        ellipse(centerX+bodyLength/4, centerY, bodyHeight/19, bodyHeight/15);
-        rect(centX+bodyL/4, centY, bodyH/25, bodyH/25);
+       
         stroke(242, 237, 242); noFill();
         ellipse(430,Y*2,10,10);Y-=1.3;X+=0.3; ellipse(365,Y*3,10,10); ellipse(Y*16,X,11,11);ellipse(X*19,80,8,7);  
         ellipse(820,Y+30,10,10);Y-=1;X+=0.5; ellipse(65,Y-20,10,10); ellipse(Y,X,11,11);ellipse(530,Y,8,7);  
@@ -119,7 +140,7 @@ var sketchProc = function(processingInstance) {
         ellipse(900,Y*1.2,10,10);Y-=1.5;X+=0.6; ellipse(650,Y*4,10,10); ellipse(700,X,11,11);ellipse(X,590,8,7);  
         ellipse(700,Y+80,10,10);Y-=0.9;X+=1.3; ellipse(465,Y*1.5,10,10); ellipse(830,X*2,11,11);ellipse(910,Y*1.1,8,7);  
 
-        if (Y<0){Y=1100;}
+        if (Y<0){Y=1100;}// for other 3
         if (X>1500){X=50;}
         };
 
