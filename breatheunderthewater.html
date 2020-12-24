@@ -13,11 +13,15 @@
           top: 10%;
           left:200px;}
 
-          h2{color:rgb(60, 105, 7);
+    h2{color:rgb(60, 105, 7);
 
         position: absolute;
         top: 25%;
           right:200px;}
+     
+    #cat{position:absolute;
+             top:80%;
+             left: 20%;}
 
                         </style>  
 
@@ -30,7 +34,10 @@
 
    <h2>    你本是水，要归于水。于是雨收敛了最初的锋芒，汇成溪流，注入河中..</h2>
 
-      
+        <div>
+    <!-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -->
+    <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif">
+        </div>  
    <p align="center"> 
     <!--This draws the Canvas on the webpage -->
        <canvas id="mycanvas"></canvas> 
@@ -43,6 +50,10 @@ var sketchProc = function(processingInstance) {
      with (processingInstance) {
         size(1500, 1200); 
         frameRate(30);
+         
+         var catEl = document.getElementById("cat");//cat
+      
+         var startTime = new Date().getTime();//cat
 
 
         var centerX = 80;
@@ -169,6 +180,23 @@ var sketchProc = function(processingInstance) {
         if (Y<0){Y=1100;}// for other 3
         if (X>1500){X=50;}
         };
+         
+       var walkTheCat = function() {
+      var currTime = new Date().getTime();
+      var secondsElapsed = ((currTime - startTime)/1000);
+      
+      var newLeft=secondsElapsed*50;  
+      
+      catEl.style.left= newLeft+"px";
+       window.requestAnimationFrame(walkTheCat);
+       
+       if(newLeft>1200){newLeft=50;} 
+      
+      };
+
+      
+      walkTheCat();
+
 
 
  }};
