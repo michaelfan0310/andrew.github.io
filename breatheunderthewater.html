@@ -3,34 +3,39 @@
     <head>
         <meta charset="utf-8">
         <title>breathunderthewater</title>
-
-     
- <style>
-
-   h1{color:rgb(128, 202, 43);
-
-          position: absolute;
-          top: 10%;
-          left:200px;}
-
-    h2{color:rgb(60, 105, 7);
-
-        position: absolute;
-        top: 25%;
-          right:200px;}
-     
-    #cat{position:absolute;
-             top:80%;
-             left: 20%;}
-
-                        </style>  
-
-      
-        </head>
+        <link rel="stylesheet" href="style.css">
+  <p align="center"> 
+    <!--This draws the Canvas on the webpage -->
+       <canvas id="mycanvas"></canvas> 
+     </p> 
+  </head>
 
 
     <body>
-   <h1>       Wearing mask, just like breathing under the water.</h1>
+        
+        <div class='scene'>
+    <div class='wrapper'>   
+      <div class='jellyfish'>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+        <div class='jellyfish_ring'></div>
+      </div>
+    </div>
+  </div>
+   <h1>       Wearing mask, people seem to breathe under the water.</h1>
 
    <h2>    你本是水，要归于水。于是雨收敛了最初的锋芒，汇成溪流，注入河中..</h2>
       
@@ -41,10 +46,7 @@
         </div>  
  
             
-     <p align="center"> 
-    <!--This draws the Canvas on the webpage -->
-       <canvas id="mycanvas"></canvas> 
-     </p> 
+   
         
      <audio controls>    
       
@@ -61,7 +63,7 @@
 
 var sketchProc = function(processingInstance) {
      with (processingInstance) {
-        size(1500, 1200); 
+        size(1600, 1200); 
         frameRate(30);
          
          var catEl = document.getElementById("cat");//cat
@@ -180,7 +182,7 @@ var sketchProc = function(processingInstance) {
         var fish = new Fish(new PVector(width/2, height/2));
         var bubbles = new ParticleSystem(fish.getMouthPosition());
 
-          draw=function() {  background(89, 216, 255);
+          draw=function() {  background(69, 176, 255,255);
 
             if(frameCount % 17=== 1){
                 bubbles.addParticle();
@@ -292,7 +294,7 @@ var sketchProc = function(processingInstance) {
        
 
        
-        stroke(242, 237, 242); noFill();
+        stroke(212, 217, 222); noFill();
         ellipse(430,Y*2,10,10);Y-=1.3;X+=0.3; ellipse(365,Y*3,10,10); ellipse(Y*16,X,11,11);ellipse(X*19,80,8,7);  
         ellipse(820,Y+30,10,10);Y-=1;X+=0.5; ellipse(65,Y-20,10,10); ellipse(Y,X,11,11);ellipse(530,Y,8,7);  
         ellipse(X*20,Y,10,10);Y-=2;X+=0.3; ellipse(65,Y,10,10); ellipse(Y+X,X,11,11);ellipse(X*30,80,8,7);   
