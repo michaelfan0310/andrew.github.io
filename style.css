@@ -203,7 +203,9 @@
     z-index: 2;
 }
          
-        #cat{position:absolute;
-                 top:80%;
-                 left: 20%;
-                  z-index: 100;}
+    #cat {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    z-index: 100;
+}
