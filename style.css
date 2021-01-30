@@ -198,14 +198,14 @@
 
 .seaweed4 {
     position: absolute;
-    top: 85%;
-    left: 76%;
+    top: 92%;
+   right:25%;
     z-index: 2;
 }
          
     #cat {
     position: absolute;
-    top: 80%;
+    top: 88%;
     left: 20%;
     z-index: 100;
 }
