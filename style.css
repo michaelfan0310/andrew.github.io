@@ -166,7 +166,7 @@
 
 .seastar {
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 4%
 }
 
@@ -184,25 +184,25 @@
 
 .turtle {
     position: absolute;
-    bottom: 2%;
+    top: 88%;
     left: 15%
 }
 
 .lobster {
     position: absolute;
-    bottom: 0%;
-    right: 15%
+    top: 80%;
+    right: 25%
 }
 
 .crab {
     position: absolute;
-    bottom: 0%;
+    top: 90%;
     right: 15%
 }
 
 .stone {
     position: absolute;
-    bottom: -5%;
+    top: 90%;
     right: 15%
 }
 
