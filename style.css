@@ -43,7 +43,7 @@
     33.33% {
         transform: translateY(-32px) translateX(32px) translateZ(112px) rotateY(70deg) rotateX(10deg) rotateZ(-10deg);
     }
-    100%;
+    100% {}
 }
 
 .scene {
@@ -167,43 +167,49 @@
 .seastar {
     position: absolute;
     top: 85%;
-    left: 4%
+    left: 4%;
+    z-index: 5;
 }
 
 .jelly {
     position: absolute;
     top: 89%;
-    right: 5%
+    right: 5%;
+    z-index: 5;
 }
 
 .jellyfish3 {
     position: absolute;
     top: 64%;
-    right: 2%
+    right: 2%;
+    z-index: 5;
 }
 
 .turtle {
     position: absolute;
-    top: 88%;
+    top: 85%;
     left: 15%
 }
 
 .lobster {
     position: absolute;
     top: 80%;
-    right: 25%
+    right: 25%;
+    z-index: 5;
 }
 
 .crab {
     position: absolute;
     top: 90%;
-    right: 15%
+    right: 15%;
+    z-index: 5;
 }
 
 .stone {
     position: absolute;
     top: 90%;
-    right: 15%
+    right: 15%;
+    z-index: 5;
 }
 
 .shark {
@@ -212,6 +218,13 @@
     left: 5%;
     z-index: 5;
     animation: animateShark 4s linear infinite;
+}
+
+.backgd {
+    position: absolute;
+    top: -23%;
+    left: 0;
+    z-index: 1;
 }
 
 @keyframes animateShark {
@@ -243,6 +256,74 @@
     left: 95%;
     z-index: 0;
     animation: animateShark2 3s linear infinite;
+}
+
+.stingay {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    z-index: 2;
+    animation: animatestingay 15s linear infinite;
+}
+
+@keyframes animatestingay {
+    0% {
+        top: 89%;
+        left: 3%;
+    }
+    33% {
+        top: 89%;
+        left: 25%;
+    }
+    50% {
+        top: 88%;
+        left: 55%;
+    }
+    66% {
+        top: 89%;
+        left: 65%;
+    }
+    100% {
+        top: 89%;
+        left: 100%;
+    }
+}
+
+.seaAnimal {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    z-index: 5;
+    animation: animateSeaAnimal 13s linear infinite;
+}
+
+@keyframes animateSeaAnimal {
+    0% {
+        top: 65%;
+        left: 5%;
+    }
+    25% {
+        top: 58%;
+        left: 25%;
+    }
+    50% {
+        top: 59%;
+        left: 50%;
+    }
+    66% {
+        top: 56%;
+        left: 75%;
+    }
+    100% {
+        top: 43%;
+        left: 113%;
+    }
+}
+
+.turtle {
+    position: absolute;
+    z-index: 5;
+    animation: animateturtle 50s linear infinite;
 }
 
 @keyframes animateShark2 {
