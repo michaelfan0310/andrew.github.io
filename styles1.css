@@ -513,3 +513,12 @@ h3 {
     width: 100%;
     filter: url("#turbulence");
   }
+
+  @media screen and (max-width: 800px) {
+    h1{
+        position: absolute;
+        z-index: -10;
+        color:rgba(0, 0, 255, 0.056)
+    }
+    
+}
