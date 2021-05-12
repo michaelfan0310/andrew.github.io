@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>ChunJieBan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="styles1.css">
     <p align="center">
         <!--This draws the Canvas on the webpage -->
         <canvas id="mycanvas"></canvas>
@@ -14,6 +14,9 @@
 
 
 <body>
+    <div class="background">
+        <div class="water"></div>
+      </div>
 
     <div class='scene'>
         <div class='wrapper'>
@@ -37,13 +40,13 @@
             </div>
         </div>
     </div>
-    <h1> With what deep murmurs through time’s silent stealth,
+    <h1> With what deep murmurs through time’s silent stealth,<br>
 Doth thy transparent, cool, and wat’ry wealth..
-Here flowing fall.</h1>
+Here flowing fall.<br></h1>
 
-    <h2>  你本是水，要归于水。于是雨收敛了最初的锋芒，汇成溪流，注入河中."
-    </h2>
-   
+    <!-- <!-- <h2>  你本是水，要归于水。于是雨收敛了最初的锋芒，汇成溪流，注入河中."
+    </h2> -->
+    -->
 
     <img class="shark" src="shark.png" width=400px;>
     </img>
@@ -61,10 +64,15 @@ Here flowing fall.</h1>
     <img class="crab" src="crab.png" width=200px;></img>
     <img class="backgd" src="backgd.png" width=100%;></img>
 
-    <div>
-        <!-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -->
-        <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif">
-    </div>
+    <svg>
+        <filter id="turbulence" x="0" y="0" width="150%" height="28%">
+          <feTurbulence id="sea-filter" numOctaves="3" seed="2" baseFrequency="0.02 0.05"></feTurbulence>
+          <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+          <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" 
+          keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"/>
+        </filter>
+      </svg>
+
     <audio autoplay loop>    
       
         <source src="soLong.mp3" type="audio/mpeg">
@@ -86,12 +94,10 @@ Here flowing fall.</h1>
     <script>
         var sketchProc = function(processingInstance) {
             with(processingInstance) {
-                size(1900, 980);
+                size(2100, 1380);
                 frameRate(30);
 
-                var catEl = document.getElementById("cat"); //cat
-
-                var startTime = new Date().getTime(); //cat
+              
 
 
                 var centerX = 80;
@@ -211,7 +217,7 @@ Here flowing fall.</h1>
                 var bubbles = new ParticleSystem(fish.getMouthPosition());
 
                 draw = function() {
-                    background(69, 176, 255, 255);
+                    background(69, 176, 255, 25);
 
                     if (frameCount % 17 === 1) {
                         bubbles.addParticle();
@@ -384,23 +390,7 @@ Here flowing fall.</h1>
                     }
                 };
 
-                var walkTheCat = function() {
-                    var currTime = new Date().getTime();
-                    var secondsElapsed = ((currTime - startTime) / 1000);
-
-                    var newLeft = secondsElapsed * 50;
-
-                    catEl.style.left = newLeft + "px";
-                    window.requestAnimationFrame(walkTheCat);
-
-                    if (newLeft > 1600) {
-                        startTime = new Date().getTime();
-                    }
-
-                };
-
-
-                walkTheCat();
+          
 
 
 
