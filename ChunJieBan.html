@@ -92,6 +92,9 @@ Here flowing fall.<br></h1>
 
     <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
     <script>
+        Document.querySelector(".jellyfish3").classList.add("invisible");
+        Document.querySelector(".jellyfish3").classList.remove("invisible");
+        Document.querySelector(".jellyfish3").classList.toggle("invisible");
         var sketchProc = function(processingInstance) {
             with(processingInstance) {
                 size(2100, 1380);
