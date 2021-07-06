@@ -92,15 +92,15 @@ Here flowing fall.<br></h1>
 
     <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
     <script>
-        Document.querySelector(".jellyfish3").classList.add("invisible");
-        Document.querySelector(".jellyfish3").classList.remove("invisible");
-        Document.querySelector(".jellyfish3").classList.toggle("invisible");
-        var sketchProc = function(processingInstance) {
-            with(processingInstance) {
+        // Document.querySelector(".jellyfish3").classList.add("invisible");
+        // Document.querySelector(".jellyfish3").classList.remove("invisible");
+        // Document.querySelector(".jellyfish3").classList.toggle("invisible");
+        var sketchProc = function (processingInstance) {
+            with (processingInstance) {
                 size(2100, 1380);
                 frameRate(30);
 
-              
+
 
 
                 var centerX = 80;
@@ -119,25 +119,25 @@ Here flowing fall.<br></h1>
                 var centery = 230;
                 centy = 360;
 
-                var Particle = function(position) {
+                var Particle = function (position) {
                     this.acceleration = new PVector(0, -0.05);
                     this.velocity = new PVector(random(-1, 1), random(-1, 0));
                     this.position = position.get();
                     this.timeToLive = 200;
                 };
 
-                Particle.prototype.run = function() {
+                Particle.prototype.run = function () {
                     this.update();
                     this.display();
                 };
 
-                Particle.prototype.update = function() {
+                Particle.prototype.update = function () {
                     this.velocity.add(this.acceleration);
                     this.position.add(this.velocity);
                     this.timeToLive -= 2;
                 };
 
-                Particle.prototype.display = function() {
+                Particle.prototype.display = function () {
                     stroke(255, 255, 255, 100);
                     strokeWeight(2);
                     fill(255, 255, 255, 50);
@@ -145,7 +145,7 @@ Here flowing fall.<br></h1>
                     ellipse(this.position.x, this.position.y, radius, radius);
                 };
 
-                Particle.prototype.isDead = function() {
+                Particle.prototype.isDead = function () {
                     if (this.timeToLive < 0) {
                         return true;
                     } else {
@@ -153,16 +153,16 @@ Here flowing fall.<br></h1>
                     }
                 };
 
-                var ParticleSystem = function(position) {
+                var ParticleSystem = function (position) {
                     this.origin = position.get();
                     this.particles = [];
                 };
 
-                ParticleSystem.prototype.addParticle = function() {
+                ParticleSystem.prototype.addParticle = function () {
                     this.particles.push(new Particle(this.origin));
                 };
 
-                ParticleSystem.prototype.run = function() {
+                ParticleSystem.prototype.run = function () {
                     for (var i = this.particles.length - 1; i >= 0; i--) {
                         var p = this.particles[i];
                         p.run();
@@ -172,13 +172,13 @@ Here flowing fall.<br></h1>
                     }
                 };
 
-                var Fish = function(position) {
+                var Fish = function (position) {
                     this.position = position.get();
                     this.width = 100;
                     this.height = 60;
                 };
 
-                Fish.prototype.swim = function() {
+                Fish.prototype.swim = function () {
 
                     this.position.x += 2.8;
                     this.position.y -= 0.5;
@@ -192,7 +192,7 @@ Here flowing fall.<br></h1>
 
                 };
 
-                Fish.prototype.display = function() {
+                Fish.prototype.display = function () {
                     noStroke();
                     fill(255, 102, 0);
                     ellipse(this.position.x, this.position.y, this.width, this.height);
@@ -212,14 +212,14 @@ Here flowing fall.<br></h1>
                     ellipse(this.position.x + this.width / 2 - 7, this.position.y - 10, 6, 6);
                 };
 
-                Fish.prototype.getMouthPosition = function() {
+                Fish.prototype.getMouthPosition = function () {
                     return new PVector(this.position.x + this.width / 2 + 10, this.position.y);
                 };
 
                 var fish = new Fish(new PVector(width / 2, height / 2));
                 var bubbles = new ParticleSystem(fish.getMouthPosition());
 
-                draw = function() {
+                draw = function () {
                     background(69, 176, 255, 25);
 
                     if (frameCount % 17 === 1) {
@@ -393,7 +393,7 @@ Here flowing fall.<br></h1>
                     }
                 };
 
-          
+
 
 
 
@@ -407,8 +407,8 @@ Here flowing fall.<br></h1>
         // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
         var processingInstance = new Processing(canvas, sketchProc);
     </script>
-
-
-</body>
-
-</html>
+    
+    
+    </body>
+    
+    </html>
