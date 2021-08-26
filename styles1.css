@@ -168,22 +168,63 @@
     position: absolute;
     top: 85%;
     left: 4%;
+    opacity:0.6;
     z-index: 5;
+    animation: fade1 4s linear infinite;
 }
+
+@keyframes fade1 {
+    0% {
+      top: 85%;
+       opacity:0.7;
+    }
+    50% {
+      top: 80%;
+       opacity:0.4;
+    }
+    100% {
+      top: 85%;
+       opacity:0.1;
+    }
+  }
 
 .jelly {
     position: absolute;
     top: 89%;
     right: 5%;
     z-index: 5;
+    animation: fade 10s linear infinite;;
+    
 }
 
-.jellyfish3 {
+
+.jelly3 {
     position: absolute;
-    top: 64%;
+    top: 84%;
     right: 2%;
     z-index: 5;
+    animation: fade 16s linear infinite;;
+    
 }
+
+@keyframes fade {
+    0% {
+        top: 84%;
+      right: 6%;
+       opacity:0.8;
+    }
+    50% {
+         top:33%;
+      right: 3%;
+       opacity:0.5;
+    }
+    100% {
+         top: 3%;
+      right: 0%;
+       opacity:0.1;
+    }
+  }
+
 
 .turtle {
     position: absolute;
@@ -196,7 +237,20 @@
     top: 80%;
     right: 25%;
     z-index: 5;
+    animation: lobsterCraw 6s linear infinite;
 }
+@keyframes lobsterCraw {
+    0% {
+      top: 80%;      
+    }
+    50% {
+      top: 82%;       
+    }
+    100% {
+      top: 80%;
+          
+    }
+  }
 
 .crab {
     position: absolute;
