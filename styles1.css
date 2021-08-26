@@ -170,20 +170,20 @@
     left: 4%;
     opacity:0.6;
     z-index: 5;
-    animation: fade1 4s linear infinite;
+    animation: fade1 8s linear infinite;
 }
 
 @keyframes fade1 {
     0% {
       top: 85%;
-       opacity:0.7;
+       opacity:0.6;
     }
     50% {
-      top: 80%;
+      top: 86%;
        opacity:0.4;
     }
     100% {
-      top: 85%;
+      top: 88%;
        opacity:0.1;
     }
   }
