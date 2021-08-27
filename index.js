@@ -7,8 +7,6 @@ var sketchProc = function (processingInstance) {
         frameRate(30);
 
 
-
-
         var centerX = 80;
         var centerY = 60;
         var bodyLength = 85;
