@@ -190,7 +190,7 @@
 
 .jelly {
     position: absolute;
-    top: 10%;
+    top: 15%;
     right: 15%;
     z-index: 5;
     animation: fade 36s infinite;
@@ -203,10 +203,10 @@
     50% {
         top:  86%;
         right: 3%;      
-       opacity:0.3;
+       opacity:0.4;
     }
     100% {    
-            opacity:0.1;
+            opacity:0.2;
     }
   }
 
@@ -214,7 +214,7 @@
 .jelly3 {
     position: absolute;
     top: 84%;
-    right: 7%;
+    right: 8%;
     z-index: 5;
     animation: fade3 33s linear infinite;
     }
@@ -222,12 +222,11 @@
     0% {            
        opacity:0.6;
     }
-    50% {           
-         
+    50% {   right: 3%;      
        opacity:0.4;
     }
-    100% {   top:  8%; 
-        right: 2%; 
+    100% {   top:  2%; 
+        right: 1%; 
             opacity:0.2;
     }
   }
