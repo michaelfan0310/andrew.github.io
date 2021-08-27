@@ -245,11 +245,6 @@
     animation: fade1 3s ease-out infinite;
 }
 
-.turtle {
-    position: absolute;
-    top: 85%;
-    left: 15%
-}
 
 .lobster {
     position: absolute;
@@ -389,13 +384,7 @@
     }
 }
 
-.seaAnimal {
-    position: absolute;
-    top: 65%;
-    left: 5%;
-    z-index: 5;
-    animation: animateSeaAnimal 13s linear infinite;
-}
+
 
 @keyframes animateSeaAnimal {
     0% {
@@ -420,11 +409,6 @@
     }
 }
 
-.turtle {
-    position: absolute;
-    z-index: 5;
-    animation: animateturtle 50s linear infinite;
-}
 
 @keyframes animateShark2 {
     0% {
@@ -496,8 +480,10 @@
     }
 }
 
+
 .turtle {
     position: absolute;
+    top: 85%;
     z-index: 5;
     animation: animateturtle 50s linear infinite;
 }
@@ -547,26 +533,7 @@ h3 {
     left: 60%;
 }
 
-/* .seaweed1 {
-    position: absolute;
-    top: 88%;
-    left: 0%;
-    z-index: 2;
-} */
 
-/* .seaweed2 {
-    position: absolute;
-    top: 85%;
-    left: 25%;
-    z-index: 2;
-} */
-
-/* .seaweed3 {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    z-index: 2;
-} */
 .backgd {
     position: absolute;
     top: -5%;
