@@ -172,7 +172,14 @@
     z-index: 5;
     animation: fade1 8s ease-out infinite;
 }
-
+.seaStar2 {
+    position: absolute;
+    top: 85%;
+    right: 12%;
+    opacity:0.6;
+    z-index: 5;
+    
+}
 @keyframes fade1 {
     0% {
       top: 85%;
@@ -230,7 +237,13 @@
             opacity:0.2;
     }
   }
-
+.jelly5 {
+    position: absolute;
+    top: 80%;
+    right: 2%;
+    z-index: 3;    
+    animation: fade1 3s ease-out infinite;
+}
 
 .turtle {
     position: absolute;
@@ -313,12 +326,6 @@
     animation: animateShark 4s linear infinite;
 }
 
-.backgd {
-    position: absolute;
-    top: 0%;
-    left: 0;
-    z-index: 1;
-}
 
 @keyframes animateShark {
     0% {
@@ -560,6 +567,12 @@ h3 {
     left: 50%;
     z-index: 2;
 } */
+.backgd {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    z-index: 1;
+}
 
 .background {
     position: absolute;
