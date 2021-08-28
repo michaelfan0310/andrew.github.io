@@ -172,14 +172,7 @@
     z-index: 5;
     animation: fade1 8s ease-out infinite;
 }
-.seaStar2 {
-    position: absolute;
-    top: 85%;
-    right: 12%;
-    opacity:0.6;
-    z-index: 5;
-    
-}
+
 @keyframes fade1 {
     0% {
       top: 85%;
@@ -312,13 +305,20 @@
     right: 15%;
     z-index: 5;
 }
-
+.seaStar2 {
+    position: absolute;
+    top: 85%;
+    right: 12%;
+    opacity:0.6;
+    z-index: 5;
+    
+}
 .shark {
     position: absolute;
     top: 70%;
     left: 5%;
     z-index: 5;
-    animation: animateShark 4s linear infinite;
+    animation: animateShark 5s linear infinite;
 }
 
 
@@ -327,17 +327,17 @@
         top: 60%;
         left: 3%;
     }
-    33% {
+    25% {
         top: 64%;
         left: 25%;
     }
     50% {
         top: 68%;
-        left: 55%;
+        left: 52%;
     }
-    66% {
+    75% {
         top: 72%;
-        left: 65%;
+        left: 75%;
     }
     100% {
         top: 75%;
@@ -366,7 +366,7 @@
         top: 89%;
         left: 3%;
     }
-    33% {
+    26% {
         top: 89%;
         left: 25%;
     }
@@ -374,9 +374,9 @@
         top: 88%;
         left: 55%;
     }
-    66% {
+    76% {
         top: 89%;
-        left: 65%;
+        left: 75%;
     }
     100% {
         top: 89%;
@@ -412,19 +412,19 @@
 
 @keyframes animateShark2 {
     0% {
-        top: 15%;
+        top: 25%;
         left: 99%;
     }
-    33% {
-        top: 12%;
+    25% {
+        top: 23%;
         left: 75%;
     }
     50% {
-        top: 9%;
+        top: 15%;
         left: 55%;
     }
-    66% {
-        top: 6%;
+    75% {
+        top: 10%;
         left: 25%;
     }
     100% {
