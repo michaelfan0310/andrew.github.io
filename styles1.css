@@ -572,9 +572,9 @@ h3 {
     
 }
 
-@media (max-width: 350px){
+@media screen and (max-width: 350px){
     body{
         width: 100vw;
         height: auto; 
-    }
+           }
 }

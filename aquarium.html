@@ -16,7 +16,7 @@
 <body>
     <div class="background">
         <div class="water"></div>
-      </div>
+      
 
     <div class='scene'>
         <div class='wrapper'>
@@ -67,14 +67,14 @@ Here flowing fall.<br></h1> -->
     <img class="backgd" src="image/backgd.png" width=100%;></img>
 
     <svg>
-        <filter id="turbulence" x="0" y="0" width="190%" height="28%">
+        <filter id="turbulence" x="0" y="0" width="290%" height="33%">
           <feTurbulence id="sea-filter" numOctaves="3" seed="2" baseFrequency="0.02 0.05"></feTurbulence>
           <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
           <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" 
           keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"/>
         </filter>
       </svg>
-
+</div>
     <audio autoplay loop>    
       
         <source src="music/Une vie.mp3" type="audio/mpeg">
