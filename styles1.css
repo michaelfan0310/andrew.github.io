@@ -564,11 +564,10 @@ h3 {
   }
 
   @media screen and (max-width: 992px) {
-    h1{
-        position: absolute;
-        z-index: -10;
-        color:rgba(0, 0, 255, 0.056)
-    }
+    body{
+        width: 100vw;
+        height: auto; 
+           }
     
 }
 
