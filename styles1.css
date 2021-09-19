@@ -139,27 +139,30 @@ animateSeaAnimal
     }
 }
 .turtling:nth-child(1) {
-    /* transform: rotateY(0deg); */
+    position:absolute;
+    top:30%;
+    right: +3%;
+    transform: rotateX(0deg);
     animation:  12s infinite animateSeaAnimal;
 }
 
 .turtling:nth-child(2) {
-    transform: rotateY(0deg);
+    transform: rotateX(0deg);
     animation:  12s infinite animateSeaAnimal;
 }
 
 .jturtling:nth-child(3) {
-    transform: rotateY(0deg);
+    transform: rotateX(0deg);
     animation:  12s infinite animateSeaAnimal;
 }
 
 .turtling:nth-child(4) {
-    transform: rotateY(0deg);
+    transform: rotateX(0deg);
     animation:  12s infinite animateSeaAnimal;
 }
 
 .turtling:nth-child(5) {
-    transform: rotateY(0deg);
+    transform: rotateX(0deg);
     animation:  12s infinite animateSeaAnimal;
 }
 
