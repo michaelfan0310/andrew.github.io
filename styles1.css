@@ -60,6 +60,13 @@
     animation: drift 100s infinite linear;
     z-index: 9;
 }
+.wrapper1 {
+    width: 80%;
+    height: 80%;
+    transform-style: preserve-3d;
+    animation: drift 80s infinite linear;
+    z-index: 9;
+}
 
 .jellyfish {
     position: relative;
