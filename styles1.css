@@ -90,65 +90,12 @@
     border-radius: 50%;
     animation: pulse 12s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-animateSeaAnimal
-/* .wrapper2 {
-    width: 80%;
-    height: 80%;
-    /* transform-style: preserve-3d; */
-    /* animation: drift 80s infinite linear; */
-    z-index: 9;
-} */
-/* .turtlingsss {
-    position: relative;
-    width: 400px;
-    height: 600px;
-    margin: 0 auto;
-    /* transform-style: preserve-3d; */
-    /* animation:  12s infinite eanimateSeaAnimal; */
-} */
-.turtling {
-    position: absolute;
-    top: 60%;
-    right: 30px;
-    width: 50px;
-    height: 50%;
-    opacity: 0.9;    
-    animation:  animateSeaAnimal 20s linear infinite;
-    
-}
-@keyframes animateSeaAnimal {
-    0% {
-        top: 65%;
-        lright: 5%;
-    }
-    25% {
-        top: 65%;
-        right: 25%;
-    }
-    50% {
-        top: 65%;
-        right: 50%;
-    }
-    66% {
-        top: 65%;
-        right: 75%;
-    }
-    100% {
-        top: 65%;
-        right: 113%;
-    }
-}
-.turtling:nth-child(1) {
-    position:absolute;
-    top:30%;
-    right: +3%;
-    transform: rotateX(0deg);
-    animation:  12s infinite animateSeaAnimal;
-}
 
-.turtling:nth-child(2) {
+
+
+/*.turtling1:nth-child(2) {
     transform: rotateX(0deg);
-    animation:  12s infinite animateSeaAnimal;
+    animation:  12s infinite animateSeaAnimal infinite;
 }
 
 .jturtling:nth-child(3) {
@@ -178,7 +125,7 @@ animateSeaAnimal
 
 .turtling:nth-child(8) {
     transform: rotateY(0deg);
-    animation:  12s infinite animateSeaAnimal);
+    animation:  12s infinite animateSeaAnimal;
 }
 
 .turtling:nth-child(9) {
@@ -196,7 +143,7 @@ animateSeaAnimal
     animation:  12s infinite animateSeaAnimal;
 }
 
-.jturtling:nth-child(12) {
+.turtling:nth-child(12) {
     transform: rotateY(0deg);
     animation: pulse 12s infinite animateSeaAnimal;
 }
@@ -219,7 +166,7 @@ animateSeaAnimal
 .turtling:nth-child(16) {
     transform: rotateY(0deg);
     animation: pulse 12s infinite animateSeaAnimal;
-}
+} */
 
 .jellyfish_ring:nth-child(1) {
     transform: rotateY(22.5deg);
