@@ -3,7 +3,7 @@
 // Document.querySelector(".jellyfish3").classList.toggle("invisible");
 var sketchProc = function (processingInstance) {
     with (processingInstance) {
-        size(2100, 1380);
+        size(2020, 1180);
         frameRate(30);
 
 
