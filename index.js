@@ -5,6 +5,17 @@ var sketchProc = function (processingInstance) {
     with (processingInstance) {
         size(2020, 1180);
         frameRate(30);
+        var canvas = document.querySelector('canvas');
+        var c = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        window.addEventListener("resize", function () {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
 
 
         var centerX = 80;
