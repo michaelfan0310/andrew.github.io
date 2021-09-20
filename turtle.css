@@ -13,53 +13,67 @@
     0% {
         top: 80%;
         right: 5%;
-        opacity: 0.9;
-        transform: rotateX(0deg);
+        opacity: 0.5;
+        transform: rotateX(5deg);
+        transform: rotateY(15deg);
     }
 
     12%{        
         top: 80%;
         right: 16%;
         opacity: 0;
+        transform: rotateX(30deg);
+        transform: rotateY(45deg);
     }
     25% {
         top: 80%;
         right: 25%;
-        opacity: 0.9;
-       
+        opacity: 0.6;
+        transform: rotateX(5deg);
+        transform: rotateY(15deg);      
     }
     37%{
         top: 80%;
         right: 37%;
         opacity: 0;
+        transform: rotateX(30deg);
+        transform: rotateY(45deg);
     }
 
     50% {
         top: 80%;
         right: 50%;        
-        opacity: 0.9;
+        opacity: 0.6;
+        transform: rotateX(5deg);
+        transform: rotateY(15deg);
     }
 
     63%{        
         top: 80%;
         right: 63%;
         opacity: 0;
+        transform: rotateX(30deg);
+        transform: rotateY(45deg);
     }
     75% {
         top: 80%;
         right: 75%;
-        opacity: 0.9;
-       
+        opacity: 0.6;
+        transform: rotateX(5deg);
+        transform: rotateY(15deg);       
     }
     87%{top: 80%;
         right: 87%;
         opacity: 0;
+        transform: rotateX(30deg);
+        transform: rotateY(45deg);
     }
     100% {
         top: 80%;
-        right: 113%;
-        opacity: 0.9;
-       
+        right: 108%;
+        opacity: 0.5;
+        transform: rotateX(0deg);
+        transform: rotateY(15deg);       
     }
 }
 .turtling4 {
@@ -83,7 +97,8 @@
         top: 80%;
         right: 16%;
         opacity: 0.9;
-        transform: rotateX(0deg);
+        transform: rotateX(30deg);
+        transform: rotateY(45deg);
     }
     25%{top: 80%;
         right: 25%;
