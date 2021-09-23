@@ -177,7 +177,7 @@
     left: 4%;
     opacity:0.6;
     z-index: 5;
-    animation: fade1 8s ease-out infinite;
+    animation: fade1 8s  ease-out infinite;
 }
 
 @keyframes fade1 {
@@ -188,6 +188,7 @@
     50% {
       top: 86%;
        opacity:0.4;
+       
     }
     100% {
       top: 88%;
