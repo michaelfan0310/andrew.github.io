@@ -334,32 +334,30 @@
     0% {
         top: 60%;
         left: 3%;
-        transform: rotateX(35deg);
-        transform: rotateY(35deg);
+        transform: rotateX(5deg);
+        transform: rotateY(5deg);
     }
     25% {
         top: 64%;
         left: 25%;
-        transform: rotateX(-35deg);
-        transform: rotateY(15deg);
+        
     }
     50% {
         top: 68%;
         left: 52%;
-        transform: rotateX(35deg);
-        transform: rotateY(35deg);
+        transform: rotateX(-5deg);
+        transform: rotateY(-5deg);
     }
     75% {
         top: 72%;
         left: 75%;
-        transform: rotateX(-35deg);
-        transform: rotateY(15deg);
+        
     }
     100% {
         top: 75%;
         left: 100%;
-        transform: rotateX(35deg);
-        transform: rotateY(35deg);
+        transform: rotateX(5deg);
+        transform: rotateY(5deg);
     }
 }
 
@@ -432,32 +430,30 @@
     0% {
         top: 25%;
         left: 99%;
-        transform: rotateX(15deg);
-        transform: rotateY(15deg);
+        transform: rotateX(5deg);
+        transform: rotateY(5deg);
     }
     25% {
         top: 23%;
         left: 75%;
-        transform: rotateX(-15deg);
-        transform: rotateY(25deg);
+        
     }
     50% {
         top: 15%;
         left: 55%;
-        transform: rotateX(15deg);
-        transform: rotateY(15deg);
+        transform: rotateX(-5deg);
+        transform: rotateY(-5deg);
     }
     75% {
         top: 10%;
         left: 25%;
-        transform: rotateX(-15deg);
-        transform: rotateY(25deg);
+       
     }
     100% {
         top: 3%;
         left: -23%;
-        transform: rotateX(15deg);
-        transform: rotateY(15deg);
+        transform: rotateX(5deg);
+        transform: rotateY(5deg);
     }
 }
 
