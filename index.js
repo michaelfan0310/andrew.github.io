@@ -36,7 +36,7 @@ var sketchProc = function (processingInstance) {
 
         var Particle = function (position) {
             this.acceleration = new PVector(0, -0.05);
-            this.velocity = new PVector(random(-1, 1), random(-1, 0));
+            this.velocity = new PVector(random(-0.8, 0.8), random(-0.8, 0.8));
             this.position = position.get();
             this.timeToLive = 200;
         };
@@ -89,8 +89,8 @@ var sketchProc = function (processingInstance) {
 
         var Fish = function (position) {
             this.position = position.get();
-            this.width = 100;
-            this.height = 60;
+            this.width = 90;
+            this.height = 54;
         };
 
         Fish.prototype.swim = function () {
