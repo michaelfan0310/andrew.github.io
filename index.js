@@ -53,9 +53,9 @@ var sketchProc = function (processingInstance) {
         };
 
         Particle.prototype.display = function () {
-            stroke(255, 255, 255, 100);
+            stroke(255, 255, 255, 80);
             strokeWeight(2);
-            fill(255, 255, 255, 50);
+            fill(255, 255, 255, 30);
             var radius = (height - this.position.y) / 100;
             ellipse(this.position.x, this.position.y, radius, radius);
         };
@@ -109,12 +109,12 @@ var sketchProc = function (processingInstance) {
 
         Fish.prototype.display = function () {
             noStroke();
-            fill(255, 102, 0);
+            fill(255, (this.position.x / 3), (this.position.y / 3));
             ellipse(this.position.x, this.position.y, this.width, this.height);
             triangle(this.position.x - this.width / 2 + 10, this.position.y,
                 this.position.x - this.width * 0.75, this.position.y + this.height / 3,
                 this.position.x - this.width * 0.75, this.position.y - this.height / 3);
-            fill(255, 191, 0);
+            fill(235, (this.position.x / 5), (this.position.y / 4));
             triangle(this.position.x + this.width / 2 + 10, this.position.y - this.height / 12,
                 this.position.x + this.width / 2 - 2, this.position.y + this.height / 8,
                 this.position.x + this.width / 2 - 2, this.position.y - this.height / 8);
@@ -131,21 +131,41 @@ var sketchProc = function (processingInstance) {
             return new PVector(this.position.x + this.width / 2 + 10, this.position.y);
         };
 
-        var fish = new Fish(new PVector(width / 2, height / 2));
+        var fish = new Fish(new PVector(width/2, height / 2));
         var bubbles = new ParticleSystem(fish.getMouthPosition());
+
+        var fish2 = new Fish(new PVector(width/5, height/4));
+        var bubbles2 = new ParticleSystem(fish2.getMouthPosition());
+
+        var fish3 = new Fish(new PVector(width/8, height/8));
+        var bubbles3 = new ParticleSystem(fish3.getMouthPosition());
+
 
         draw = function () {
             background(69, 176, 255, 25);
 
             if (frameCount % 17 === 1) {
                 bubbles.addParticle();
+                bubbles2.addParticle();
+                bubbles3.addParticle();
+
             }
 
             bubbles.addParticle();
+            bubbles2.addParticle();
+            bubbles3.addParticle();
             bubbles.origin.set(fish.getMouthPosition());
+            bubbles2.origin.set(fish2.getMouthPosition());
+            bubbles3.origin.set(fish3.getMouthPosition());
             bubbles.run();
+            bubbles2.run();
+            bubbles3.run();
             fish.swim();
             fish.display();
+            fish2.swim();
+            fish2.display();
+            fish3.swim();
+            fish3.display();
 
             var bodyColor = color(centerX / 4 + 85, centerY / 3 + 155, centerX / 3 + 60);
 
