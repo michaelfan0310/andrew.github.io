@@ -13,14 +13,14 @@
     0% {
         top: 80%;
         right: 5%;
-        opacity: 0.5;
+        opacity: 0.9;
         transform: rotateX(5deg);
         transform: rotateY(15deg);
     }
 
     12%{        
         top: 80%;
-        right: 16%;
+        right: 12%;
         opacity: 0;
         transform: rotateX(30deg);
         transform: rotateY(45deg);
@@ -28,7 +28,7 @@
     25% {
         top: 80%;
         right: 25%;
-        opacity: 0.6;
+        opacity: 0.8;
         transform: rotateX(5deg);
         transform: rotateY(15deg);      
     }
@@ -43,7 +43,7 @@
     50% {
         top: 80%;
         right: 50%;        
-        opacity: 0.6;
+        opacity: 0.9;
         transform: rotateX(5deg);
         transform: rotateY(15deg);
     }
@@ -58,7 +58,7 @@
     75% {
         top: 80%;
         right: 75%;
-        opacity: 0.6;
+        opacity: 0.9;
         transform: rotateX(5deg);
         transform: rotateY(15deg);       
     }
@@ -70,8 +70,8 @@
     }
     100% {
         top: 80%;
-        right: 108%;
-        opacity: 0.5;
+        right: 105%;
+        opacity: 0.9;
         transform: rotateX(0deg);
         transform: rotateY(15deg);       
     }
@@ -83,7 +83,7 @@
     z-index: 9;
     width: 50px;
     height: 60px;
-    opacity: 0.9;    
+    opacity: 0.1;    
     animation:  animateTurtling4 30s linear infinite;    
 }
 @keyframes animateTurtling4 {
@@ -93,9 +93,9 @@
         right: 5%;
         opacity: 0;
     }
-    13% {
+    12% {
         top: 80%;
-        right: 16%;
+        right: 12%;
         opacity: 0.9;
         transform: rotateX(30deg);
         transform: rotateY(45deg);
@@ -124,7 +124,7 @@
         right: 63%;
         transform: rotateX(60deg);
         transform: rotateY(30deg);
-        opacity: 0.9;
+        opacity: 0.8;
     }
 
     75%{top: 80%;
@@ -134,14 +134,14 @@
     87% {
         top: 80%;
         right: 87%;
-        opacity: 0.9;
+        opacity: 0.8;
         transform: rotateX(30deg);
         transform: rotateY(45deg);
     }
     100%{
         opacity: 0;
         top: 80%;
-        right: 113%;
+        right: 105%;
     }
     
 }
