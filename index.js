@@ -79,9 +79,9 @@ var sketchProc = function (processingInstance) {
 
         Fish.prototype.swim = function () {
 
-            this.position.x += 2.8;
-            this.position.y -= 0.5;
-            if (this.position.x > 1800) {
+            this.position.x += 3.3;
+            this.position.y -= 0.9;
+            if (this.position.x > canvas.width) {
                 this.position.x = -120;
             }
 
