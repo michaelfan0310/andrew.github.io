@@ -3,18 +3,20 @@
 // Document.querySelector(".jellyfish3").classList.toggle("invisible");
 var sketchProc = function (processingInstance) {
     with (processingInstance) {
-        size(1920, 1080);
-        frameRate(30);
         var canvas = document.querySelector('canvas');
         var c = canvas.getContext('2d');
 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
-        window.addEventListener("resize", function () {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
+        size(canvas.width, canvas.height);
+        frameRate(30);
+       
+
+        // window.addEventListener("resize", function () {
+        //     canvas.width = window.innerWidth;
+        //     canvas.height = window.innerHeight;
+        // });
 
 
 
