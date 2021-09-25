@@ -1,35 +1,26 @@
-// Document.querySelector(".jellyfish3").classList.add("invisible");
-// Document.querySelector(".jellyfish3").classList.remove("invisible");
-// Document.querySelector(".jellyfish3").classList.toggle("invisible");
+
 var sketchProc = function (processingInstance) {
-    with (processingInstance) {
+    
         var canvas = document.querySelector('canvas');
         var c = canvas.getContext('2d');
 
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
+        with (processingInstance) {
+
         size(canvas.width, canvas.height);
         frameRate(30);
-       
-
         // window.addEventListener("resize", function () {
         //     canvas.width = window.innerWidth;
         //     canvas.height = window.innerHeight;
-        // });
+        // });     
 
-
-
-        var centerX = 80;
-        var centerY = 60;
-        var bodyLength = 63;
-        var bodyHeight = 37;      
-
-        
+     
 
         var Particle = function (position) {
             this.acceleration = new PVector(0, -0.05);
-            this.velocity = new PVector(random(-0.8, 0.8), random(-0.8, 0.8));
+            this.velocity = new PVector(random(-0.9, 1), random(-0.9, 0));
             this.position = position.get();
             this.timeToLive = 200;
         };
@@ -46,9 +37,9 @@ var sketchProc = function (processingInstance) {
         };
 
         Particle.prototype.display = function () {
-            stroke(255, 255, 255, 80);
+            stroke(235, 235, 235, 80);
             strokeWeight(2);
-            fill(255, 255, 255, 30);
+            fill(255, 255, 255, 40);
             var radius = (height - this.position.y) / 100;
             ellipse(this.position.x, this.position.y, radius, radius);
         };
@@ -82,16 +73,15 @@ var sketchProc = function (processingInstance) {
 
         var Fish = function (position) {
             this.position = position.get();
-            for(var i=20; i<100; i+=20){
-            this.width = i;
-            this.height = i*0.6;}
+            this.width = 100;
+            this.height = 60;
         };
 
         Fish.prototype.swim = function () {
 
-            this.position.x += 3.8;
+            this.position.x += 2.8;
             this.position.y -= 0.5;
-            if (this.position.x > canvas.width) {
+            if (this.position.x > 1800) {
                 this.position.x = -120;
             }
 
@@ -103,15 +93,14 @@ var sketchProc = function (processingInstance) {
 
         Fish.prototype.display = function () {
             noStroke();
-            fill(235, (this.position.x / 5), (this.position.y / 4));
+            fill(255, 191, 0);
             triangle(this.position.x - this.width / 2 + 10, this.position.y,
                 this.position.x - this.width * 0.75, this.position.y + this.height / 3,
                 this.position.x - this.width * 0.75, this.position.y - this.height / 3);
             fill(255, (this.position.x / 3), (this.position.y / 3));
             ellipse(this.position.x, this.position.y, this.width, this.height);
-           
-            fill(235, (this.position.x/ 5), (this.position.y / 4));
             
+            fill(255, 191, 0);
             triangle(this.position.x + this.width / 2 + 10, this.position.y - this.height / 12,
                 this.position.x + this.width / 2 - 2, this.position.y + this.height / 8,
                 this.position.x + this.width / 2 - 2, this.position.y - this.height / 8);
@@ -127,76 +116,73 @@ var sketchProc = function (processingInstance) {
         Fish.prototype.getMouthPosition = function () {
             return new PVector(this.position.x + this.width / 2 + 10, this.position.y);
         };
-        
-        var fish = new Fish(new PVector(width/2, height / 2));
+
+        var fish = new Fish(new PVector(width / 2, height / 2));
         var bubbles = new ParticleSystem(fish.getMouthPosition());
 
-        var fish2 = new Fish(new PVector(width/5, height/4));
+        var fish2 = new Fish(new PVector(width / 3, height / 3));
         var bubbles2 = new ParticleSystem(fish2.getMouthPosition());
 
-        var fish3 = new Fish(new PVector(width/8, height/8));
+        var fish3 = new Fish(new PVector(width / 4, height / 4));
         var bubbles3 = new ParticleSystem(fish3.getMouthPosition());
 
 
-         <!--create Salmon here:-->
-
-        var Salmon=function(centerX, centerY, bodyLength, bodyHeight) {
+        var Salmon = function (centerX, centerY, bodyLength, bodyHeight) {
+            // this.position = position.get();
             this.centerX = centerX;
             this.centerY = centerY;
             this.bodyLength = bodyLength;
             this.bodyHeight = bodyHeight;
         };
-        
+        // var EyeX= (this.centerX + this.bodyLength * 0.3);
+        // var EyeY= (this.centerY - this.bodyHeight * 0.4);
 
-        Salmon.prototype.display = function() {
+        Salmon.prototype.display = function () {
             noStroke();
             // fill(233, 35, 35);
             fill((this.centerX + this.centerY), (this.centerX / 10), (this.cenertY / 10));
             ellipse(this.centerX, this.centerY, this.bodyLength, this.bodyHeight);
-            fill(centerX, 129, centerY);
+            fill((this.centerX / 5), (this.centerX / 8 + 100), (this.cenertY / 8));
             triangle(this.centerX - this.bodyLength / 2, this.centerY, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY - this.bodyHeight / 2, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY + this.bodyHeight / 2);
+
             // eye
             fill(33, 33, 33);
             ellipse((this.centerX + this.bodyLength * 0.3), (this.centerY - this.bodyHeight * 0.1), this.bodyHeight / 5, this.bodyHeight / 5);
         }
-
         Salmon.prototype.swim = function () {
-            this.centerX += 4.5;
-            this.centerY += 1.2;
+            this.centerX += 3;
+            this.centerY += 0.8;
 
-            if (this.centerX > canvas.width+50) {
+            if (this.centerX > 1950) {
                 this.centerX = 0;
             }
-            if (this.centerY > canvas.height) {
+            if (this.centerY > 1090) {
                 this.centerY = 30;
             }
         }
         var salmon = new Salmon(60, 45, 65, 38);
         var salmon1 = new Salmon(100, 160, 50, 29);
         var salmon2 = new Salmon(150, 65, 65, 38);
-      for (var i = 3; i < 18; i++) {
-        var salmon_i = new Salmon(60 * (i - 1), 45, 65, 38);
-        }
-
+            for (var i = 3; i < 18; i++) {
+                var salmon_i = new Salmon(60 * (i - 1), 45, 65, 38);
+            }
 
         draw = function () {
             background(69, 176, 255, 25);
-
 
             salmon.display();
             salmon.swim();
             salmon1.display();
             salmon1.swim();
             salmon2.display();
-            salmon2.swim();
+            salmon2.swim();         
             salmon_i.display();
             salmon_i.swim();
-
+            
             if (frameCount % 17 === 1) {
                 bubbles.addParticle();
                 bubbles2.addParticle();
                 bubbles3.addParticle();
-
             }
 
             bubbles.addParticle();
@@ -213,10 +199,9 @@ var sketchProc = function (processingInstance) {
             fish2.swim();
             fish2.display();
             fish3.swim();
-            fish3.display();
-
-    };
-  }
+            fish3.display();   
+        };
+    }
 };
 
 
@@ -225,3 +210,4 @@ var canvas = document.getElementById("mycanvas");
 canvas.width = window.innerWidth;
 // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
 var processingInstance = new Processing(canvas, sketchProc);
+
