@@ -20,12 +20,12 @@ var sketchProc = function (processingInstance) {
 
         var centerX = 80;
         var centerY = 60;
-        var bodyLength = 85;
-        var bodyHeight = 50;
+        var bodyLength = 63;
+        var bodyHeight = 37;
         var centX = 150;
         var centY = 138;
-        var bodyL = 112;
-        var bodyH = 66;
+        var bodyL = 84;
+        var bodyH = 49;
         var X = 50;
         var Y = 1100;
 
@@ -89,14 +89,14 @@ var sketchProc = function (processingInstance) {
 
         var Fish = function (position) {
             this.position = position.get();
-            for(var i=20; i<120; i+=20){
+            for(var i=20; i<100; i+=20){
             this.width = i;
             this.height = i*0.6;}
         };
 
         Fish.prototype.swim = function () {
 
-            this.position.x += 2.8;
+            this.position.x += 3.8;
             this.position.y -= 0.5;
             if (this.position.x > 1800) {
                 this.position.x = -120;
@@ -251,8 +251,8 @@ var sketchProc = function (processingInstance) {
             rect(centx + bodyL / 4, centy, bodyH / 25, bodyH / 25);
 
 
-            centerX += 3;
-            centX += 2.2;
+            centerX += 3.8;
+            centX += 2.9;
             centerY += 0.8;
             centY += 1.2;
 
@@ -260,29 +260,29 @@ var sketchProc = function (processingInstance) {
             centx += 5.8;
             centery += 1.5;
             centy += 1.9;
-            if (centerX > 1500) {
+            if (centerX > 1950) {
                 centerX = 0;
             }
-            if (centX > 1500) {
+            if (centX > 1950) {
                 centX = 0;
             }
-            if (centerY > 1000) {
+            if (centerY > 1080) {
                 centerY = 30;
             }
-            if (centY > 1000) {
+            if (centY > 1080) {
                 centY = 30;
             }
 
-            if (centerx > 1500) {
+            if (centerx > 1900) {
                 centerx = 50;
             } //for another3
-            if (centx > 1500) {
+            if (centx > 1900) {
                 centx = 80;
             }
-            if (centery > 1000) {
+            if (centery > 1080) {
                 centery = 130;
             }
-            if (centy > 1000) {
+            if (centy > 1080) {
                 centy = 230;
             }
 
