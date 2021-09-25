@@ -71,10 +71,10 @@ var sketchProc = function (processingInstance) {
             }
         };
 
-        function Fish(position) {
+        function Fish(position,width,height) {
             this.position = position.get();
-            this.width = 90;
-            this.height = 54;
+            this.width = width;
+            this.height = height;
         }
 
         Fish.prototype.swim = function () {
@@ -117,13 +117,13 @@ var sketchProc = function (processingInstance) {
             return new PVector(this.position.x + this.width / 2 + 10, this.position.y);
         };
 
-        var fish = new Fish(new PVector(width / 2, height / 2));
+        var fish = new Fish(new PVector(width / 2, height / 2),100,60);
         var bubbles = new ParticleSystem(fish.getMouthPosition());
 
-        var fish2 = new Fish(new PVector(width/5, height / 3));
+        var fish2 = new Fish(new PVector(width/5, height / 3),60,36);
         var bubbles2 = new ParticleSystem(fish2.getMouthPosition());
 
-        var fish3 = new Fish(new PVector(width / 4, height / 4));
+        var fish3 = new Fish(new PVector(width / 4, height / 4),80,48);
         var bubbles3 = new ParticleSystem(fish3.getMouthPosition());
 
 
@@ -160,9 +160,9 @@ var sketchProc = function (processingInstance) {
                 this.centerY = 30;
             }
         }
-        var salmon = new Salmon(60, 45, 65, 38);
+        var salmon = new Salmon(50, 45, 65, 38);
         var salmon1 = new Salmon(100, 160, 50, 29);
-        var salmon2 = new Salmon(150, 65, 65, 38);
+        var salmon2 = new Salmon(580, 365, 80, 47);
 
         for (var i = 3; i < 18; i++) {
                 var salmon_i = new Salmon(60 * (i - 1), 45, 65, 38);
