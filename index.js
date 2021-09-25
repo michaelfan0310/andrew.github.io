@@ -153,17 +153,17 @@ var sketchProc = function (processingInstance) {
             this.centerX += 3;
             this.centerY += 0.8;
 
-            if (this.centerX > 1950) {
+            if (this.centerX > canvas.width) {
                 this.centerX = 0;
             }
-            if (this.centerY > 1090) {
+            if (this.centerY > canvas.height) {
                 this.centerY = 30;
             }
         }
         var salmon = new Salmon(60, 45, 65, 38);
         var salmon1 = new Salmon(100, 160, 50, 29);
         var salmon2 = new Salmon(150, 65, 65, 38);
-            for (var i = 3; i < 18; i++) {
+        for (var i = 3; i < 18; i++) {
                 var salmon_i = new Salmon(60 * (i - 1), 45, 65, 38);
             }
 
@@ -175,10 +175,11 @@ var sketchProc = function (processingInstance) {
             salmon1.display();
             salmon1.swim();
             salmon2.display();
-            salmon2.swim();         
+            salmon2.swim();   
+            
             salmon_i.display();
             salmon_i.swim();
-            
+
             if (frameCount % 17 === 1) {
                 bubbles.addParticle();
                 bubbles2.addParticle();
