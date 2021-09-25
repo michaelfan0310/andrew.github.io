@@ -1,9 +1,9 @@
 var Salmon = function () {
-    // this.position = position.get();
-    // this.centerX = 60;
-    // this.centerY = 45;
-    // this.bodyLength = 65;
-    // this.bodyHeight = 38;
+   
+    this.centerX = 60;
+    this.centerY = 45;
+    this.bodyLength = 65;
+    this.bodyHeight = 38;
 };
 // var EyeX= (this.centerX + this.bodyLength * 0.3);
 // var EyeY= (this.centerY - this.bodyHeight * 0.4);
