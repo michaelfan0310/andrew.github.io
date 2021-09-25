@@ -143,8 +143,7 @@ var sketchProc = function (processingInstance) {
             this.bodyLength = bodyLength;
             this.bodyHeight = bodyHeight;
         };
-        // var EyeX= (this.centerX + this.bodyLength * 0.3);
-        // var EyeY= (this.centerY - this.bodyHeight * 0.4);
+        
 
         Salmon.prototype.display = function() {
             noStroke();
