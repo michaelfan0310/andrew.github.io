@@ -71,11 +71,11 @@ var sketchProc = function (processingInstance) {
             }
         };
 
-        var Fish = function (position) {
+        function Fish(position) {
             this.position = position.get();
             this.width = 90;
             this.height = 54;
-        };
+        }
 
         Fish.prototype.swim = function () {
 
@@ -127,13 +127,13 @@ var sketchProc = function (processingInstance) {
         var bubbles3 = new ParticleSystem(fish3.getMouthPosition());
 
 
-        var Salmon = function (centerX, centerY, bodyLength, bodyHeight) {
+        function Salmon(centerX, centerY, bodyLength, bodyHeight) {
             // this.position = position.get();
             this.centerX = centerX;
             this.centerY = centerY;
             this.bodyLength = bodyLength;
             this.bodyHeight = bodyHeight;
-        };
+        }
         // var EyeX= (this.centerX + this.bodyLength * 0.3);
         // var EyeY= (this.centerY - this.bodyHeight * 0.4);
 
@@ -163,6 +163,7 @@ var sketchProc = function (processingInstance) {
         var salmon = new Salmon(60, 45, 65, 38);
         var salmon1 = new Salmon(100, 160, 50, 29);
         var salmon2 = new Salmon(150, 65, 65, 38);
+
         for (var i = 3; i < 18; i++) {
                 var salmon_i = new Salmon(60 * (i - 1), 45, 65, 38);
             }
