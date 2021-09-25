@@ -91,7 +91,7 @@ var sketchProc = function (processingInstance) {
 
             this.position.x += 3.8;
             this.position.y -= 0.5;
-            if (this.position.x > 1800) {
+            if (this.position.x > canvas.width) {
                 this.position.x = -120;
             }
 
@@ -137,7 +137,10 @@ var sketchProc = function (processingInstance) {
         var fish3 = new Fish(new PVector(width/8, height/8));
         var bubbles3 = new ParticleSystem(fish3.getMouthPosition());
 
-        function Salmon(centerX, centerY, bodyLength, bodyHeight) {
+
+         <!--create Salmon here:-->
+
+        var Salmon=function(centerX, centerY, bodyLength, bodyHeight) {
             this.centerX = centerX;
             this.centerY = centerY;
             this.bodyLength = bodyLength;
@@ -152,19 +155,19 @@ var sketchProc = function (processingInstance) {
             ellipse(this.centerX, this.centerY, this.bodyLength, this.bodyHeight);
             fill(centerX, 129, centerY);
             triangle(this.centerX - this.bodyLength / 2, this.centerY, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY - this.bodyHeight / 2, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY + this.bodyHeight / 2);
-
             // eye
             fill(33, 33, 33);
             ellipse((this.centerX + this.bodyLength * 0.3), (this.centerY - this.bodyHeight * 0.1), this.bodyHeight / 5, this.bodyHeight / 5);
         }
-        Salmon.prototype.swim = function () {
-            this.centerX += 3;
-            this.centerY += 0.8;
 
-            if (this.centerX > 1950) {
+        Salmon.prototype.swim = function () {
+            this.centerX += 4.5;
+            this.centerY += 1.2;
+
+            if (this.centerX > canvas.width+50) {
                 this.centerX = 0;
             }
-            if (this.centerY > 1090) {
+            if (this.centerY > canvas.height) {
                 this.centerY = 30;
             }
         }
