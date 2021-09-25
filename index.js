@@ -140,7 +140,7 @@ var sketchProc = function (processingInstance) {
         Salmon.prototype.display = function () {
             noStroke();
             // fill(233, 35, 35);
-            fill((this.centerX + this.centerY), (this.centerX / 10), (this.cenertY / 10));
+            fill((this.centerX/6 + this.centerY/5), (this.centerX/6), (this.cenertY/8));
             ellipse(this.centerX, this.centerY, this.bodyLength, this.bodyHeight);
             fill((this.centerX / 5), (this.centerX / 8 + 100), (this.cenertY / 8));
             triangle(this.centerX - this.bodyLength / 2, this.centerY, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY - this.bodyHeight / 2, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY + this.bodyHeight / 2);
@@ -150,7 +150,7 @@ var sketchProc = function (processingInstance) {
             ellipse((this.centerX + this.bodyLength * 0.3), (this.centerY - this.bodyHeight * 0.1), this.bodyHeight / 5, this.bodyHeight / 5);
         }
         Salmon.prototype.swim = function () {
-            this.centerX += 3;
+            this.centerX += 5.8;
             this.centerY += 0.8;
 
             if (this.centerX > canvas.width) {
@@ -163,6 +163,10 @@ var sketchProc = function (processingInstance) {
         var salmon = new Salmon(50, 45, 65, 38);
         var salmon1 = new Salmon(100, 160, 50, 29);
         var salmon2 = new Salmon(580, 365, 80, 47);
+        var salmon3 = new Salmon(600, 780, 30, 17);
+        var salmon4 = new Salmon(880, 580, 26, 14);
+        var salmon5 = new Salmon(300, 880, 20, 12);
+        var salmon6 = new Salmon(180, 680, 18, 10);
 
         for (var i = 3; i < 18; i++) {
                 var salmon_i = new Salmon(60 * (i - 1), 45, 65, 38);
@@ -177,6 +181,14 @@ var sketchProc = function (processingInstance) {
             salmon1.swim();
             salmon2.display();
             salmon2.swim();   
+            salmon3.display();
+            salmon3.swim();
+            salmon4.display();
+            salmon4.swim();
+            salmon5.display();
+            salmon5.swim();
+            salmon6.display();
+            salmon6.swim();
             
             salmon_i.display();
             salmon_i.swim();
