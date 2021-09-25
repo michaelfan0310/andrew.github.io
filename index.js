@@ -89,8 +89,9 @@ var sketchProc = function (processingInstance) {
 
         var Fish = function (position) {
             this.position = position.get();
-            this.width = 90;
-            this.height = 54;
+            for(var i=20; i<120; i+=20){
+            this.width = i;
+            this.height = i*0.6;}
         };
 
         Fish.prototype.swim = function () {
@@ -130,7 +131,7 @@ var sketchProc = function (processingInstance) {
         Fish.prototype.getMouthPosition = function () {
             return new PVector(this.position.x + this.width / 2 + 10, this.position.y);
         };
-
+        
         var fish = new Fish(new PVector(width/2, height / 2));
         var bubbles = new ParticleSystem(fish.getMouthPosition());
 
