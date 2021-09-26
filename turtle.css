@@ -1,7 +1,7 @@
 .turtling3{
     position: absolute;
-    top: 80%;
-    right: 5%;
+    top: 10%;
+    right: 1%;
     z-index: 9;
     width: 50px;
     height: 60px;
@@ -10,67 +10,61 @@
 }
 
 @keyframes animateTurtling {
-    0% {
-        top: 80%;
-        right: 5%;
+    0% {       
+        right: 1%;
         opacity: 0.9;
         transform: rotateX(5deg);
         transform: rotateY(15deg);
     }
 
-    12%{        
-        top: 80%;
+    12%{    
+        
         right: 12%;
         opacity: 0;
         transform: rotateX(30deg);
         transform: rotateY(45deg);
     }
-    25% {
-        top: 80%;
+    25% {        
         right: 25%;
-        opacity: 0.8;
+        opacity: 0.9;
         transform: rotateX(5deg);
         transform: rotateY(15deg);      
     }
     37%{
-        top: 80%;
         right: 37%;
         opacity: 0;
         transform: rotateX(30deg);
         transform: rotateY(45deg);
     }
 
-    50% {
-        top: 80%;
+    50% {        
         right: 50%;        
         opacity: 0.9;
         transform: rotateX(5deg);
         transform: rotateY(15deg);
     }
 
-    63%{        
-        top: 80%;
+    63%{  
         right: 63%;
         opacity: 0;
         transform: rotateX(30deg);
         transform: rotateY(45deg);
     }
     75% {
-        top: 80%;
         right: 75%;
         opacity: 0.9;
         transform: rotateX(5deg);
         transform: rotateY(15deg);       
     }
-    87%{top: 80%;
+    87%{
         right: 87%;
         opacity: 0;
         transform: rotateX(30deg);
         transform: rotateY(45deg);
     }
     100% {
-        top: 80%;
-        right: 105%;
+        
+        right: 102%;
         opacity: 0.9;
         transform: rotateX(0deg);
         transform: rotateY(15deg);       
@@ -78,70 +72,65 @@
 }
 .turtling4 {
     position: absolute;
-    top: 80%;
-    right: 5%;
+    top: 10%;
+    right: 1%;
     z-index: 9;
     width: 50px;
     height: 60px;
-    opacity: 0.1;    
+    opacity: 0;    
     animation:  animateTurtling4 30s linear infinite;    
 }
 @keyframes animateTurtling4 {
 
-    0%{
-        top: 80%;
-        right: 5%;
+    0%{        
+        right: 1%;
         opacity: 0;
     }
-    12% {
-        top: 80%;
+    12% {        
         right: 12%;
         opacity: 0.9;
         transform: rotateX(30deg);
         transform: rotateY(45deg);
     }
-    25%{top: 80%;
+    25%{
         right: 25%;
         opacity: 0;
     }
     
     37% {
-        top: 80%;
+        
         right: 37%;
         opacity: 0.9;
         transform: rotateX(20deg);
          transform: rotateY(45deg);
     }
-   50%{      
-    top: 80%;
+   50%{   
         right: 50%;
         opacity: 0;
     }
     
 
-    63% {
-        top: 80%;
+    63% {        
         right: 63%;
+        opacity: 0.9;
         transform: rotateX(60deg);
         transform: rotateY(30deg);
-        opacity: 0.8;
+        
     }
 
-    75%{top: 80%;
+    75%{
         right: 75%;
         opacity: 0;
     }
     87% {
-        top: 80%;
         right: 87%;
-        opacity: 0.8;
+        opacity: 0.9;
         transform: rotateX(30deg);
         transform: rotateY(45deg);
     }
     100%{
-        opacity: 0;
-        top: 80%;
-        right: 105%;
+        opacity: 0;       
+        right: 102%;
     }
     
 }
