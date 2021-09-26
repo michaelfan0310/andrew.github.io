@@ -117,10 +117,10 @@ var sketchProc = function (processingInstance) {
             return new PVector(this.position.x + this.width / 2 + 10, this.position.y);
         };
 
-        var fish = new Fish(new PVector(width / 2, height / 2),100,60);
+        var fish = new Fish(new PVector(width/2, height/2),100,60);
         var bubbles = new ParticleSystem(fish.getMouthPosition());
 
-        var fish2 = new Fish(new PVector(width/5, height / 3),60,36);
+        var fish2 = new Fish(new PVector(width/5, height/3),60,36);
         var bubbles2 = new ParticleSystem(fish2.getMouthPosition());
 
         var fish3 = new Fish(new PVector(width/4, height/4),80,48);
@@ -128,7 +128,7 @@ var sketchProc = function (processingInstance) {
 
         var fish4 = new Fish(new PVector(width/8, height/8), 54, 40);
         var bubbles4 = new ParticleSystem(fish4.getMouthPosition());
-        var fish5 = new Fish(new PVector(width/10, height/1.1), 100, 60);
+        var fish5 = new Fish(new PVector(width/20, height/1.1), 100, 60);
         var bubbles5 = new ParticleSystem(fish5.getMouthPosition());
 
 
@@ -156,7 +156,7 @@ var sketchProc = function (processingInstance) {
         }
         Salmon.prototype.swim = function () {
             this.centerX += 5.8;
-            this.centerY += 0.8;
+            this.centerY += 1.3;
 
             if (this.centerX > canvas.width) {
                 this.centerX = 0;
