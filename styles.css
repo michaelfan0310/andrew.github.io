@@ -4,6 +4,13 @@
     box-sizing: border-canvas;
 }
 
+#mycanvas{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
 @keyframes fadeIn {
     to {
         opacity: 1;
