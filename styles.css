@@ -176,7 +176,7 @@
     top: 85%;
     left: 4%;
     opacity:0.6;
-    z-index: 5;
+    z-index: 11;
     animation: fade1 8s  ease-out infinite;
 }
 
@@ -200,7 +200,7 @@
     position: absolute;
     top: 15%;
     right: 15%;
-    z-index: 5;
+    z-index: 11;
     animation: fade 36s infinite;
     animation-timing-function: cubic-bezier(0.311,0.441,0.444,1.649);    
 }
@@ -223,7 +223,7 @@
     position: absolute;
     top: 84%;
     right: 8%;
-    z-index: 5;
+    z-index: 11;
     animation: fade3 33s linear infinite;
     }
 @keyframes fade3 {
@@ -242,7 +242,7 @@
     position: absolute;
     top: 80%;
     right: 2%;
-    z-index: 3;    
+    z-index:11;    
     animation: fade1 3s ease-out infinite;
 }
 
@@ -251,7 +251,7 @@
     position: absolute;
     top: 80%;
     right: 25%;
-    z-index: 5;
+    z-index: 11;
     animation: lobsterCraw 5s linear infinite;
 }
 @keyframes lobsterCraw {
@@ -276,7 +276,7 @@
     position: absolute;
     top: 90%;
     right: 15%;
-    z-index: 5;
+    z-index: 11;
     animation: animateCrab 15s linear infinite;
 }
 
@@ -311,14 +311,14 @@
     position: absolute;
     top: 90%;
     right: 15%;
-    z-index: 5;
+    z-index: 11;
 }
 .seaStar2 {
     position: absolute;
     top: 85%;
     right: 12%;
     opacity:0.6;
-    z-index: 5;
+    z-index: 9;
     
 }
 .shark {
@@ -332,29 +332,29 @@
 
 @keyframes animateShark {
     0% {
-        top: 60%;
-        left: 3%;
+        top: 55%;
+        left: -3%;
         transform: rotateX(5deg);
         transform: rotateY(5deg);
     }
     25% {
-        top: 64%;
+        top: 58%;
         left: 25%;
         
     }
     50% {
-        top: 68%;
+        top: 61%;
         left: 52%;
         transform: rotateX(-5deg);
         transform: rotateY(-5deg);
     }
     75% {
-        top: 72%;
+        top: 66%;
         left: 75%;
         
     }
     100% {
-        top: 75%;
+        top: 69%;
         left: 100%;
         transform: rotateX(5deg);
         transform: rotateY(5deg);
@@ -365,7 +365,7 @@
     position: absolute;
     top: 25%;
     left: 95%;
-    z-index: 0;
+    z-index: 1;
     animation: animateShark2 3s linear infinite;
 }
 
@@ -373,7 +373,7 @@
     position: absolute;
     top: 75%;
     left: 5%;
-    z-index: 2;
+    z-index: 11;
     animation: animatestingay 15s linear infinite;
 }
 
@@ -459,7 +459,7 @@
 
 .facai {
     position: absolute;
-    top: 55%;
+    top: 50%;
     right: 6%;
     z-index: 5;
     animation: animateShark2 23s linear infinite;
@@ -467,7 +467,7 @@
 
 .facai2 {
     position: absolute;
-    top: 25%;
+    top:45%;
     left: 6%;
     z-index: 5;
     animation: animateSeaAnimalaaa 20s linear infinite;
@@ -475,31 +475,31 @@
 
 .seaAnimal {
     position: absolute;
-    top: 65%;
+    top: 61%;
     left: 85%;
-    z-index: 5;
-    animation: animateSeaAnimalaaa 13s linear infinite;
+    z-index: 8;
+    animation:animateShark 13s linear infinite;
 }
 
 @keyframes animateSeaAnimalaaa {
     0% {
-        top: 65%;
+        top: 53%;
         left: 5%;
     }
     25% {
-        top: 58%;
+        top: 52%;
         left: 25%;
     }
     50% {
-        top: 59%;
+        top: 50%;
         left: 50%;
     }
     66% {
-        top: 56%;
+        top: 53%;
         left: 75%;
     }
     100% {
-        top: 43%;
+        top: 53%;
         left: 113%;
     }
 }
@@ -508,7 +508,7 @@
 .turtle {
     position: absolute;
     top: 85%;
-    z-index: 5;
+    z-index: 11;
     animation: animateturtle 50s linear infinite;
 }
 
@@ -562,7 +562,7 @@ h3 {
     position: absolute;
     top: -5%;
     left: 0;
-    z-index: 1;
+    z-index: 9;
 }
 
 .background {

@@ -9,6 +9,17 @@
     animation:  animateTurtling 30s linear infinite;    
 }
 
+.turtling33{
+    position: absolute;
+    top: 71%;
+    right: 1%;
+    z-index: 8;
+    width: 50px;
+    height: 60px;
+    opacity: 0.9;    
+    animation:  animateTurtling 20s linear infinite;    
+}
+
 @keyframes animateTurtling {
     0% {       
         right: 1%;
@@ -71,13 +82,23 @@
 }
 .turtling4 {
     position: absolute;
-    top: 10%;
+    top: 11%;
     right: 1%;
     z-index: 9;
     width: 50px;
     height: 60px;
     opacity: 0;    
     animation:  animateTurtling4 30s linear infinite;    
+}
+.turtling44 {
+    position: absolute;
+    top: 71%;
+    right: 1%;
+    z-index: 9;
+    width: 50px;
+    height: 60px;
+    opacity: 0;    
+    animation:  animateTurtling4 20s linear infinite;    
 }
 @keyframes animateTurtling4 {
 
