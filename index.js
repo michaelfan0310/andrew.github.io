@@ -147,7 +147,7 @@ var sketchProc = function (processingInstance) {
             // fill(233, 35, 35,150);
             fill((this.centerX/6+this.centerY/5+100), (this.centerY/4 + this.centerX/10-50), (this.cenertY/8-100), 180);
             ellipse(this.centerX, this.centerY, this.bodyLength, this.bodyHeight);
-            fill((this.centerX / 5), (this.centerX / 8 + 100), (this.cenertY/8), 150);
+            fill((this.centerX/5)+80, (this.centerX/8 + 30), (this.cenertY/8), 180);
             triangle(this.centerX - this.bodyLength / 2, this.centerY, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY - this.bodyHeight / 2, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY + this.bodyHeight / 2);
 
             // eye
