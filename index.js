@@ -97,7 +97,7 @@ var sketchProc = function (processingInstance) {
             triangle(this.position.x - this.width / 2 + 10, this.position.y,
                 this.position.x - this.width * 0.75, this.position.y + this.height / 3,
                 this.position.x - this.width * 0.75, this.position.y - this.height / 3);
-            fill(235, (this.position.x/5), (this.position.y / 4 + this.position.x/10),180);
+            fill(this.position.x/5+100, (this.position.x/5), (this.position.y/6 + this.position.x/10),180);
             ellipse(this.position.x, this.position.y, this.width, this.height);
             
             fill(255, 191, 0,150);
