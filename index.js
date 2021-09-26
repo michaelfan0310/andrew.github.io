@@ -93,11 +93,11 @@ var sketchProc = function (processingInstance) {
 
         Fish.prototype.display = function () {
             noStroke();
-            fill(255, 191, 0,100);
+            fill(255, 191, 0,130);
             triangle(this.position.x - this.width / 2 + 10, this.position.y,
                 this.position.x - this.width * 0.75, this.position.y + this.height / 3,
                 this.position.x - this.width * 0.75, this.position.y - this.height / 3);
-            fill(this.position.x/5+100, (this.position.x/5), (this.position.y/6 + this.position.x/10),180);
+            fill(this.position.x/5+100, (this.position.x/5), (this.position.y/6 + this.position.x/10),200);
             ellipse(this.position.x, this.position.y, this.width, this.height);
             
             fill(255, 191, 0,150);
@@ -145,9 +145,9 @@ var sketchProc = function (processingInstance) {
         Salmon.prototype.display = function () {
             noStroke();
             // fill(233, 35, 35,150);
-            fill((this.centerX/6+this.centerY/5+100), (this.centerY/4 + this.centerX/10-50), (this.cenertY/8-100), 180);
+            fill((this.centerX/6+this.centerY/5+100), (this.centerY/4 + this.centerX/10-50), (this.cenertY/8-100), 160);
             ellipse(this.centerX, this.centerY, this.bodyLength, this.bodyHeight);
-            fill((this.centerX/5)+80, (this.centerX/8 + 30), (this.cenertY/8), 180);
+            fill((this.centerX/5)+80, (this.centerX/8 + 30), (this.cenertY/8), 160);
             triangle(this.centerX - this.bodyLength / 2, this.centerY, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY - this.bodyHeight / 2, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY + this.bodyHeight / 2);
 
             // eye
