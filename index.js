@@ -177,7 +177,7 @@ var sketchProc = function (processingInstance) {
 
         draw = function () {
             
-            background(69, 176, 255, 25);
+            background(69, 176, 255, 1);
 
             salmon.display();
             salmon.swim();

@@ -342,7 +342,7 @@
         top: 55%;
         left: -3%;
         transform: rotateX(5deg);
-        transform: rotateY(5deg);
+        transform: rotateY(1deg);
     }
     25% {
         top: 58%;
@@ -353,7 +353,7 @@
         top: 61%;
         left: 52%;
         transform: rotateX(-5deg);
-        transform: rotateY(-5deg);
+        transform: rotateY(-1deg);
     }
     75% {
         top: 66%;
@@ -364,7 +364,7 @@
         top: 69%;
         left: 100%;
         transform: rotateX(5deg);
-        transform: rotateY(5deg);
+        transform: rotateY(1deg);
     }
 }
 
