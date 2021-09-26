@@ -17,8 +17,7 @@
         transform: rotateY(15deg);
     }
 
-    12%{    
-        
+    12%{       
         right: 12%;
         opacity: 0;
         transform: rotateX(30deg);
