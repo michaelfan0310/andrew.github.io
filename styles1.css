@@ -68,6 +68,7 @@
     z-index: 9;
 }
 
+
 .jellyfish {
     position: relative;
     width: 400px;
@@ -589,6 +590,12 @@ h3 {
     width: 100%;
     filter: url("#turbulence");
   }
+  .whale {
+    position: absolute;
+    top:0%;
+    right:1%;
+    z-index: 9;
+}
 
   @media screen and (max-width: 992px) {
     body{

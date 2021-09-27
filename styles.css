@@ -343,7 +343,7 @@
 @keyframes animateShark {
     0% {
         top: 55%;
-        left: -3%;
+        left: -16%;
         transform: rotateX(5deg);
         transform: rotateY(1deg);
     }
@@ -365,7 +365,7 @@
     }
     100% {
         top: 69%;
-        left: 100%;
+        left: 113%;
         transform: rotateX(5deg);
         transform: rotateY(1deg);
     }
@@ -466,35 +466,35 @@
         transform: rotateY(5deg);
     }
 }
-
+.seaAnimal {
+    position: absolute;
+    top: 61%;
+    left: 85%;
+    z-index: 5;
+    animation:animateShark 13s linear infinite;
+}
 .facai {
     position: absolute;
     top: 50%;
     right: 6%;
-    z-index: 5;
+    z-index: 8;
     animation: animateShark2 23s linear infinite;
 }
 
 .facai2 {
     position: absolute;
     top:45%;
-    left: 6%;
-    z-index: 5;
+    left: -3%;
+    z-index: 11;
     animation: animateSeaAnimalaaa 20s linear infinite;
 }
 
-.seaAnimal {
-    position: absolute;
-    top: 61%;
-    left: 85%;
-    z-index: 8;
-    animation:animateShark 13s linear infinite;
-}
+
 
 @keyframes animateSeaAnimalaaa {
     0% {
         top: 53%;
-        left: 5%;
+        left: -8%;
     }
     25% {
         top: 52%;
