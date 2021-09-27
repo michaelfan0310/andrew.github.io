@@ -590,11 +590,46 @@ h3 {
     width: 100%;
     filter: url("#turbulence");
   }
-  .whale {
+  .whale0 {
     position: absolute;
     top:-10%;
     right:-2%;
     z-index: 9;
+    opacity: 0.1;
+    animation: animateWhale0 10s linear infinite;
+    animation: animateShark2 23s linear infinite;
+}
+@keyframes animateWhale0 {
+    0% {opacity: 0.5;    }
+    33% {opacity: 0;    }    
+    67% { opacity: 0.3; } 
+    100% { opacity: 0.3;   }
+}
+.whale {
+    position: absolute;
+    top:-10%;
+    right:-2%;
+    z-index: 9; 
+    opacity: 0;  
+    animation: animateWhale 10s linear infinite;
+}
+@keyframes animateWhale {
+    0% {opacity: 0;    }
+    33% {opacity: 0.7;    }    
+    67% { opacity: 0;    }
+}
+.whale1 {
+    position: absolute;
+    top:-10%;
+    right:-2%;
+    z-index: 9; 
+    opacity: 0;  
+    animation: animateWhale1 10s linear infinite;
+}
+@keyframes animateWhale1 {
+    0% {opacity: 0;    }
+    33% {opacity: 0;    }    
+    67% { opacity: 0.7;    }
 }
 
   @media screen and (max-width: 992px) {
