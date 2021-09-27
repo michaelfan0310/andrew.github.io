@@ -22,7 +22,7 @@ var sketchProc = function (processingInstance) {
             this.acceleration = new PVector(0, -0.05);
             this.velocity = new PVector(random(-0.9, 1), random(-0.9, 0));
             this.position = position.get();
-            this.timeToLive = 200;
+            this.timeToLive = 250;
         };
 
         Particle.prototype.run = function () {
@@ -37,10 +37,10 @@ var sketchProc = function (processingInstance) {
         };
 
         Particle.prototype.display = function () {
-            stroke(235, 235, 235, 60);
-            strokeWeight(2);
-            fill(255, 255, 255, 40);
-            var radius = (height - this.position.y) / 100;
+            stroke(225, 225, 225, 30);
+            strokeWeight(1.5);
+            fill(235, 235, 235, 40);
+            var radius = (height - this.position.y) / 120;
             ellipse(this.position.x, this.position.y, radius, radius);
         };
 
@@ -94,21 +94,21 @@ var sketchProc = function (processingInstance) {
 
         Fish.prototype.display = function () {
             noStroke();
-            fill(255, 191, 0,130);
+            fill(255, 191, 0,120);
             triangle(this.position.x - this.width / 2 + 10, this.position.y,
                 this.position.x - this.width * 0.75, this.position.y + this.height / 3,
                 this.position.x - this.width * 0.75, this.position.y - this.height / 3);
             fill(this.position.x/5+100, (this.position.x/5), (this.position.y/6 + this.position.x/10),200);
             ellipse(this.position.x, this.position.y, this.width, this.height);
             
-            fill(255, 191, 0,150);
+            fill(255, 191, 0,130);
             triangle(this.position.x + this.width / 2 + 10, this.position.y - this.height / 12,
                 this.position.x + this.width / 2 - 2, this.position.y + this.height / 8,
                 this.position.x + this.width / 2 - 2, this.position.y - this.height / 8);
             triangle(this.position.x + this.width / 2 + 10, this.position.y - this.height / 12 + 18,
                 this.position.x + this.width / 2 - 10, this.position.y + this.height / 8 + 10,
                 this.position.x + this.width / 2 - 12, this.position.y - this.height / 8 + 10);
-            fill(255, 255, 255,170);
+            fill(255, 255, 255,150);
             ellipse(this.position.x + this.width / 2 - 10, this.position.y - 11, 15, 20);
             fill(0, 0, 0);
             ellipse(this.position.x + this.width / 2 - 7, this.position.y - 10, 6, 6);
