@@ -80,13 +80,14 @@ var sketchProc = function (processingInstance) {
         Fish.prototype.swim = function () {
 
             this.position.x += 3.3;
-            this.position.y -= 0.9;
-            if (this.position.x > canvas.width) {
-                this.position.x = -120;
-            }
+            this.position.y -= 0.8;
 
-            if (this.position.y < 0) {
-                this.position.y = 600;
+            if (this.position.x > (canvas.width * 0.77) && this.position.y < 0.23 * canvas.height) {
+                this.position.x = 0;
+            } else if (this.position.x > canvas.width) {
+                this.position.x = 0;
+            } else if (this.position.y < 0) {
+                this.position.y = canvas.height;
             }
 
         };
@@ -158,10 +159,11 @@ var sketchProc = function (processingInstance) {
             this.centerX += 5.8;
             this.centerY += 1.3;
 
-            if (this.centerX > canvas.width) {
+            if (this.centerX > (canvas.width * 0.77) && this.centerY < 0.23 * canvas.height) {
                 this.centerX = 0;
-            }
-            if (this.centerY > canvas.height) {
+            } else if (this.centerX > canvas.width) {
+                this.centerX = 0;
+            } else if (this.centerY > canvas.height) {
                 this.centerY = 30;
             }
         }

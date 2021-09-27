@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="turtle.css">
+    <link rel="stylesheet" href="whales.css">
     <p align="center">
         <!--This draws the Canvas on the webpage -->
         <canvas id="mycanvas"></canvas>
@@ -15,6 +16,8 @@
 
 
 <body>
+    <div class="background">
+        <div class="water"></div>
 
     <div class='scene'>
         <div class='wrapper'>
@@ -81,7 +84,7 @@
         <div class='turtling'><img src="image/turtle/t7.png" /></div>
         <div class='turtling8'><img src="image/turtle/t8.png" /></div>
         <div class='turtling11'><img src="image/turtle/t11.png" /></div>
-            <!-- </div>
+            </div>
         </div>
     </div> -->
     <h1> Wearing mask, people seem to breathe under the water.</h1>
@@ -101,11 +104,12 @@
     <img class="crab" src="crab.png" width=200px;></img>
     <img class="backgd" src="image/backgd.png" width=100%;></img>
     <img class="whale0" src="image/whale0.png" width=25%;></img>
-<img class="whale" src="image/whale.png" width=25%;></img>
-<img class="whale1" src="image/whale1.png" width=25%;></img>
+    <img class="whale" src="image/whale.png" width=25%;></img>
+    <img class="whale1" src="image/whale1.png" width=25%;></img>
+    <img class="whale3" src="image/whale3.png" width=25%;></img>
     <div>
         <!-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -->
-        <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif">
+        <!-- <img id="cat" src="https://www.kasandbox.org/programming-images/misc/cat-walk.gif"> -->
     </div>
     <audio autoplay loop>    
       
@@ -146,23 +150,9 @@
                 // var catEl = document.getElementById("cat"); //cat
 
                 // var startTime = new Date().getTime(); //cat
-                
-                // var centerX = 80;                 
-                // var centerY = 60;
-                // var bodyLength = 43;
-                // var bodyHeight = 25;
-                var centX = 150;
-                var centY = 138;
-                var bodyL = 56;
-                var bodyH = 33;
-                var X = 50;
-                var Y = 1100;
+                     
 
-                var centerx = 900;
-                centx = 880;
-                var centery = 230;
-                centy = 360;
-
+              
                 var Particle = function(position) {
                     this.acceleration = new PVector(0, -0.05);
                     this.velocity = new PVector(random(-0.9, 1), random(-0.9, 0));

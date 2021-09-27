@@ -13,26 +13,26 @@
 
 @keyframes fadeIn {
     to {
-        opacity: 1;
+        opacity: 0.5;
     }
 }
 
 @keyframes drift {
     0% {
         transform: rotateX(15deg) rotateZ(15deg) rotateY(0) scale(1);
-        opacity: 0.6;
+        opacity: 0.3;
     }
     15% {
         transform: rotateX(35deg) rotateZ(30deg) rotateY(-50deg) scale(1.3);
-        opacity: 0.8;
+        opacity: 0.6;
     }
     75% {
         transform: rotateX(-35deg) rotateZ(-30deg) rotateY(50deg) scale(0.7);
-        opacity: 0.6;
+        opacity: 0.3;
     }
     100% {
         transform: rotateX(15deg) rotateZ(15deg) rotateY(0) scale(1);
-        opacity: 0.8;
+        opacity: 0.6;
     }
 }
 
@@ -41,11 +41,11 @@
         height: 70%;
         width: 60%;
         left: 30%;
-        opacity: 0.4;
+        opacity: 0.3;
     }
     70% {
         height: 20%;
-        opacity: 0.8;
+        opacity: 0.6;
     }
 }
 
@@ -550,22 +550,9 @@
     position: absolute;
     top: 48%;
     left: 9%;
-}
+}*/
 
-h2 {
-    color: rgb(60, 105, 7);
-    position: absolute;
-    top: 25%;
-    right: 200px;
-}
 
-h3 {
-    color: rgb(207, 14, 14);
-    font-size: 3em;
-    position: absolute;
-    top: 55%;
-    left: 60%;
-} */
 
 
 .backgd {
@@ -585,7 +572,7 @@ h3 {
     background-image: url("image/sea.jpg");
     background-size: cover;
   }
-  
+ 
   .background .water {
     position: absolute;
     background-image: url("sea-map.png");
@@ -611,3 +598,4 @@ h3 {
         height: auto; 
            }
 }
+

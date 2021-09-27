@@ -1,0 +1,48 @@
+  .whale0 {
+    position: absolute;
+    top:-10%;
+    right:-2%;
+    z-index: 9;
+    opacity: 0.1;      
+    animation: animateWhale0 5s linear infinite;
+} 
+@keyframes animateWhale0 {
+    0% {opacity: 0.09;    }
+    43% {opacity: 0;    }    
+    77% { opacity: 0.1; } 
+    100% { opacity: 0.09;   }
+}
+.whale {
+    position: absolute;
+    top:-10%;
+    right:-2%;
+    z-index: 9; 
+    opacity: 0;  
+    animation: animateWhale 5s linear infinite;
+}
+@keyframes animateWhale {
+    0% {opacity: 0;    }
+    43% {opacity: 0.09;    }    
+    77% { opacity: 0;    }
+}
+.whale1 {
+    position: absolute;
+    top:-10%;
+    right:-2%;
+    z-index: 9; 
+    opacity: 0;  
+    animation: animateWhale1 5s linear infinite;
+}
+@keyframes animateWhale1 {
+    0% {opacity: 0;    }
+    43% {opacity: 0;    }    
+    77% { opacity: 0.1;    }
+}
+.whale3 {
+    position: absolute;
+    top:-10%;
+    right:-2%;
+    z-index: 9;
+    opacity: 0.1;    
+    animation: animateShark2 23s linear infinite;
+ }
