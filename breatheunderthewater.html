@@ -15,8 +15,6 @@
 
 
 <body>
-    <div class="background">
-        <div class="water"></div>
 
     <div class='scene'>
         <div class='wrapper'>
@@ -83,15 +81,15 @@
         <div class='turtling'><img src="image/turtle/t7.png" /></div>
         <div class='turtling8'><img src="image/turtle/t8.png" /></div>
         <div class='turtling11'><img src="image/turtle/t11.png" /></div>
-           </div>
+            <!-- </div>
         </div>
     </div> -->
     <h1> Wearing mask, people seem to breathe under the water.</h1>
 
     <h2> 你本是水，要归于水。于是雨收敛了最初的锋芒，汇成溪流，注入河中..</h2>
-    <img class="shark" src="image/shark.png" width=18%;></img>
+    <img class="shark" src="image/shark.png" width=400px;></img>
     <img class="facai2" src="image/facai2.png" width=400px;></img>
-    <img class="shark2" src="image/shark2.png" width=22%;></img>
+    <img class="shark2" src="image/shark2.png" width=400px;></img>
     <img class="stingay" src="stingay.png" width=280px;></img>
     <img class="seastar" src="seaStar.png" width=200px;></img>
     <img class="seaAnimal" src="seaAnimal4.png" width=200px;></img>
@@ -101,8 +99,8 @@
     <img class="lobster" src="lobster.png" width=300px;></img>
     <img class="stone" src="stone.png" width=300px;></img>
     <img class="crab" src="crab.png" width=200px;></img>
-    <img class="backgd" src="backgd.png" width=100%;></img>
-    <img id="whale" class="whale" src="image/whale.png" width=25%></img>
+    <img class="backgd" src="image/backgd.png" width=100%;></img>
+    <img class="whale" src="image/whale.png" width=25%;></img>
 
     <div>
         <!-- Cat walking GIF from: http://www.anniemation.com/clip_art/graphics.html -->
@@ -126,25 +124,22 @@
     </audio>
    
     <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
-    
     <script src="salmon.js" charset="utf-8"> </script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="jquery/jquery.min.js"></script>
     <script>
         var sketchProc = function(processingInstance) {
             with(processingInstance) {
                 size(1920, 1080);
                 frameRate(30);
-                // 	var canvas = document.querySelector('canvas');
-                // var c = canvas.getContext('2d');
+                	var canvas = document.querySelector('canvas');
+                var c = canvas.getContext('2d');
 
-                // canvas.width = window.innerWidth;
-                // canvas.height = window.innerHeight;
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
 
-                // window.addEventListener("resize", function () {
-                //     canvas.width = window.innerWidth;
-                //     canvas.height = window.innerHeight;
-                // });
+                window.addEventListener("resize", function () {
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                });
 
 
                 // var catEl = document.getElementById("cat"); //cat
@@ -159,7 +154,13 @@
                 var centY = 138;
                 var bodyL = 56;
                 var bodyH = 33;
-               
+                var X = 50;
+                var Y = 1100;
+
+                var centerx = 900;
+                centx = 880;
+                var centery = 230;
+                centy = 360;
 
                 var Particle = function(position) {
                     this.acceleration = new PVector(0, -0.05);
@@ -288,37 +289,37 @@
 
                     // eye
                     fill(33, 33, 33);
-                    ellipse((this.centerX + this.bodyLength * 0.3), (this.centerY - this.bodyHeight * 0.1), this.bodyHeight/5, this.bodyHeight/5);
+                    ellipse((this.centerX + this.bodyLength * 0.3), (this.centerY - this.bodyHeight * 0.1), this.bodyHeight / 5, this.bodyHeight / 5);
                 }
+                Salmon.prototype.swim = function () {
+                    this.centerX += 3;
+                    this.centerY += 0.5;
 
-    Salmon.prototype.swim = function () {
-        this.centerX += 3;
-        this.centerY += 0.8;
-
-    if (this.centerX>1495 && this.centerY<216) {
-            this.centerX = 0;   
-    }  else if (this.centerX > canvas.width) {
-    this.centerX = 0;
-    }  else if (this.centerY > canvas.height) {
-    this.centerY = 30;
-    }     
-    }
+                  
+                    if (this.centerX > (canvas.width*0.76) && this.centerY < 0.22*canvas.height) {
+                        this.centerX = 0;
+                    } else if (this.centerX > canvas.width) {
+                        this.centerX = 0;
+                    } else if (this.centerY > canvas.height) {
+                        this.centerY = 30;
+                    }
+                }
                 var salmon = new Salmon(60,45,65,38);
                 var salmon1 = new Salmon(100, 160, 50, 29);
                 var salmon2 = new Salmon(150, 65, 65, 38);
+                 var salmon3 = new Salmon(600, 780, 30, 17);
+                var salmon4 = new Salmon(880, 580, 26, 14);
+                var salmon5 = new Salmon(300, 880, 60, 34);
+                var salmon6 = new Salmon(180, 680, 18, 10);
                 for (var i = 3; i < 18; i++) {                
                     var salmon_i = new Salmon(60 * (i - 1), 45, 65, 38);
                 }
                
-               var Whale=Object.create(Fish.prototype);
-                // $(".whale").prototype.display = Object.create(Fish.prototype);
-                $(".whale")=new Whale();
 
-        draw = function() {
-            background(69, 176, 255, 55);
 
-                $(".whale").display();
-                $(".whale").swim();
+                draw = function() {
+                    background(69, 176, 255, 5);
+
        
                 salmon.display();
                 salmon.swim();
@@ -326,6 +327,14 @@
                 salmon1.swim();
                 salmon2.display();
                 salmon2.swim();
+                salmon3.display();
+                    salmon3.swim();
+                    salmon4.display();
+                    salmon4.swim();
+                    salmon5.display();
+                    salmon5.swim();
+                    salmon6.display();
+                    salmon6.swim();
                 salmon_i.display();
                 salmon_i.swim();
                    

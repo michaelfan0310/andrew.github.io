@@ -592,8 +592,8 @@ h3 {
   }
   .whale {
     position: absolute;
-    top:0%;
-    right:1%;
+    top:-10%;
+    right:-2%;
     z-index: 9;
 }
 
