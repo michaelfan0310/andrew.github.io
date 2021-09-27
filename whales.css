@@ -1,4 +1,12 @@
-  .whale0 {
+#whales {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+} 
+ 
+ .whale0 {
     position: absolute;
     top:-12%;
     right:-2%;

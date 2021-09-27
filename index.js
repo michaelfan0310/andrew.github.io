@@ -82,7 +82,7 @@ var sketchProc = function (processingInstance) {
             this.position.x += 3.3;
             this.position.y -= 0.8;
 
-            if (this.position.x > (canvas.width * 0.77) && this.position.y < 0.23 * canvas.height) {
+            if (this.position.x > (canvas.width * 0.79) && this.position.y < 0.18 * canvas.height) {
                 this.position.x = 0;
             } else if (this.position.x > canvas.width) {
                 this.position.x = 0;
@@ -159,7 +159,7 @@ var sketchProc = function (processingInstance) {
             this.centerX += 5.8;
             this.centerY += 1.3;
 
-            if (this.centerX > (canvas.width * 0.77) && this.centerY < 0.23 * canvas.height) {
+            if (this.centerX > (canvas.width * 0.79) && this.centerY < 0.17 * canvas.height) {
                 this.centerX = 0;
             } else if (this.centerX > canvas.width) {
                 this.centerX = 0;
