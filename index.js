@@ -172,9 +172,9 @@ var sketchProc = function (processingInstance) {
         var salmon1 = new Salmon(100, 160, 50, 29);
         var salmon2 = new Salmon(580, 365, 80, 47);
         var salmon3 = new Salmon(600, 780, 30, 17);
-        var salmon4 = new Salmon(880, 580, 26, 14);
+        // var salmon4 = new Salmon(880, 580, 26, 14);
         var salmon5 = new Salmon(300, 880, 60, 34);
-        var salmon6 = new Salmon(180, 680, 18, 10);
+        // var salmon6 = new Salmon(180, 680, 18, 10);
 
         var salmonss = [];
             for (var i = 2; i < 102; i++) {
@@ -192,14 +192,14 @@ var sketchProc = function (processingInstance) {
             salmon1.swim();
             salmon2.display();
             salmon2.swim();   
-            salmon3.display();
-            salmon3.swim();
-            salmon4.display();
-            salmon4.swim();
+            // salmon3.display();
+            // salmon3.swim();
+            // salmon4.display();
+            // salmon4.swim();
             salmon5.display();
             salmon5.swim();
-            salmon6.display();
-            salmon6.swim();         
+            // salmon6.display();
+            // salmon6.swim();         
             
 
             
@@ -319,26 +319,26 @@ var sketchProc = function (processingInstance) {
             salmonss[38].swim();
             salmonss[39].display();
             salmonss[39].swim();
-            salmonss[40].display();
-            salmonss[40].swim();
-            salmonss[41].display();
-            salmonss[41].swim();
-            salmonss[42].display();
-            salmonss[42].swim();
-            salmonss[43].display();
-            salmonss[43].swim();
-            salmonss[44].display();
-            salmonss[44].swim();
-            salmonss[45].display();
-            salmonss[45].swim();
-            salmonss[46].display();
-            salmonss[46].swim();
-            salmonss[47].display();
-            salmonss[47].swim();
-            salmonss[48].display();
-            salmonss[48].swim();
-            salmonss[49].display();
-            salmonss[49].swim();
+            // salmonss[40].display();
+            // salmonss[40].swim();
+            // salmonss[41].display();
+            // salmonss[41].swim();
+            // salmonss[42].display();
+            // salmonss[42].swim();
+            // salmonss[43].display();
+            // salmonss[43].swim();
+            // salmonss[44].display();
+            // salmonss[44].swim();
+            // salmonss[45].display();
+            // salmonss[45].swim();
+            // salmonss[46].display();
+            // salmonss[46].swim();
+            // salmonss[47].display();
+            // salmonss[47].swim();
+            // salmonss[48].display();
+            // salmonss[48].swim();
+            // salmonss[49].display();
+            // salmonss[49].swim();
             // salmonss[50].display();
             // salmonss[50].swim();
             // salmonss[51].display();
