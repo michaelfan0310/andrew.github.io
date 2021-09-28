@@ -129,8 +129,17 @@ var sketchProc = function (processingInstance) {
 
         var fish4 = new Fish(new PVector(width/8, height/8), 54, 40);
         var bubbles4 = new ParticleSystem(fish4.getMouthPosition());
-        var fish5 = new Fish(new PVector(width/20, height/1.1), 100, 60);
+        var fish5 = new Fish(new PVector(width/20, height/15), 100, 60);
         var bubbles5 = new ParticleSystem(fish5.getMouthPosition());
+
+        fishGroup=[];
+            for (var i = 0; i < 102; i++) {
+                var fish_i = new Fish(new PVector(width / 20, height / 15), 30 + 2 * Math.random(1), 20 + 2 * Math.random(1),
+                   );
+                var bubbles_i = new ParticleSystem(fish_i.getMouthPosition());
+
+                fishGroup.push(fish_i);
+            }
 
 
         function Salmon(centerX, centerY, bodyLength, bodyHeight) {
@@ -156,17 +165,18 @@ var sketchProc = function (processingInstance) {
             ellipse((this.X+ this.L * 0.3), (this.Y - this.H * 0.1), this.H / 5, this.H / 5);
         }
         Salmon.prototype.swim = function () {
-            this.X+= 5.8;
+            this.X += 5.8 * Math.random(0.5, 1);
             this.Y+= 1.1+1*Math.random(0.9,1);
 
-            if (this.X> (canvas.width * 0.79) && this.Y < 0.17 * canvas.height) {
+            if (this.X> (canvas.width * 0.79) && this.Y < 0.17 * canvas.height) {   /#for Wales Mouth*/
                 this.X= 0;
                 this.Y = canvas.height * Math.random(0.9,1)-200;
             } else if (this.X> canvas.width) {
                 this.X= 0;
             } else if (this.Y > canvas.height) {
+                // this.X = 0.55*canvas.width * Math.random(1);
                 this.Y = 50 * Math.random(1);
-            } else if (this.Y > canvas.height*0.25 && this.Y < canvas.height*0.6){
+            } else if (this.Y > canvas.height*0.24 && this.Y < canvas.height*0.6){
                 this.Y=canvas.height*0.8;
             }
         }
@@ -397,7 +407,48 @@ var sketchProc = function (processingInstance) {
             salmonss[79].swim();
             salmonss[80].display();
             salmonss[80].swim();
-           
+
+            // if (frameCount % 17 === 1) {
+            //     bubbles[0].addParticle();
+            //     bubbles[1].addParticle();
+            //     bubbles[2].addParticle();
+            //     bubbles[3].addParticle();
+            //     bubbles[4].addParticle();
+            // }
+
+            // bubbles[0].addParticle();
+            // bubbles[1].addParticle();
+            // bubbles[2].addParticle();
+            // bubbles[3].addParticle();
+            // bubbles[4].addParticle();
+            // bubbles[0].origin.set(fishGroup[0].getMouthPosition());
+            // bubbles[1].origin.set(fishGroup[1].getMouthPosition());
+            // bubbles[2].origin.set(fishGroup[2].getMouthPosition());
+            // bubbles[3].origin.set(fishGroup[3].getMouthPosition());
+            // bubbles[4].origin.set(fishGroup[4].getMouthPosition());
+            // fishGroup[0].swim();
+            // fishGroup[0].display();
+            // fishGroup[1].swim();
+            // fishGroup[1].display();
+            // fishGroup[2].swim();
+            // fishGroup[2].display();
+            // fishGroup[3].swim();
+            // fishGroup[3].display();
+            // fishGroup[4].swim();
+            // fishGroup[4].display();
+            // fishGroup[5].swim();
+            // fishGroup[5].display();
+            // fishGroup[6].swim();
+            // fishGroup[6].display();
+            // fishGroup[7].swim();
+            // fishGroup[7].display();
+            // fishGroup[8].swim();
+            // fishGroup[8].display();
+            // fishGroup[9].swim();
+            // fishGroup[9].display();
+            // fishGroup[10].swim();
+            // fishGroup[10].display();
+                      
         };
     }
 };
