@@ -438,7 +438,7 @@
 
 @keyframes animateShark2 {
     0% {
-        top: 25%;
+        top: 21%;
         left: 99%;
         transform: rotateX(5deg);
         transform: rotateY(5deg);
@@ -449,18 +449,18 @@
         
     }
     50% {
-        top: 15%;
+        top: 19%;
         left: 55%;
         transform: rotateX(-5deg);
         transform: rotateY(-5deg);
     }
     75% {
-        top: 10%;
+        top: 15%;
         left: 25%;
        
     }
     100% {
-        top: 3%;
+        top: 7%;
         left: -23%;
         transform: rotateX(5deg);
         transform: rotateY(5deg);
@@ -478,7 +478,7 @@
     top: 50%;
     right: 6%;
     z-index: 8;
-    animation: animateShark2 18s linear infinite;
+    animation: animateShark2 13s linear infinite;
 }
 
 .facai2 {
