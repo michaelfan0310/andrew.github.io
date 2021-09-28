@@ -309,8 +309,11 @@
                 var salmon4 = new Salmon(880, 580, 26, 14);
                 var salmon5 = new Salmon(300, 880, 60, 34);
                 var salmon6 = new Salmon(180, 680, 18, 10);
-                for (var i = 3; i < 18; i++) {                
-                    var salmon_i = new Salmon(60 * (i - 1), 45, 65, 38);
+
+                var Salmons=[];
+                for (var i = 3; i < 100; i++) {                
+                    var salmon_i = new Salmon(20 * (i - 1)*Math.random(1), 20*(i-1)+0.6*canvas.height, 20, 11);
+                    Salmons.push(salmon_i);
                 }
             //    $(".whale").prototype=Object.create(Salmon.prototype);
             //    $(".whale").prototype.swim=function(){
@@ -329,15 +332,53 @@
                 salmon2.display();
                 salmon2.swim();
                 salmon3.display();
-                    salmon3.swim();
-                    salmon4.display();
-                    salmon4.swim();
-                    salmon5.display();
-                    salmon5.swim();
-                    salmon6.display();
-                    salmon6.swim();
+                salmon3.swim();
+                salmon4.display();
+                salmon4.swim();
+                salmon5.display();
+                salmon5.swim();
+                salmon6.display();
+                salmon6.swim();
                 salmon_i.display();
                 salmon_i.swim();
+            
+            Salmons[0].display();
+            Salmons[0].swim();
+            Salmons[1].display();
+            Salmons[1].swim();
+            Salmons[2].display();
+            Salmons[2].swim();
+            Salmons[3].display();
+            Salmons[3].swim();
+            Salmons[4].display();
+            Salmons[4].swim();
+            Salmons[5].display();
+            Salmons[5].swim();
+            Salmons[6].display();
+            Salmons[6].swim();
+            Salmons[7].display();
+            Salmons[7].swim();
+            Salmons[8].display();
+                    Salmons[8].swim();
+                    Salmons[9].display();
+                    Salmons[9].swim();
+                    Salmons[10].display();
+                    Salmons[10].swim();
+                    Salmons[11].display();
+                    Salmons[11].swim();
+                    Salmons[12].display();
+                    Salmons[12].swim();
+                    Salmons[13].display();
+                    Salmons[13].swim();
+                    Salmons[14].display();
+                    Salmons[14].swim();
+                    Salmons[15].display();
+                    Salmons[15].swim();
+            //     for (var j=0;j<Salmons.length;J++){
+            //     Salmons[j].display();
+            //     Salmons[j].swim();
+            // }
+            //     Salmons[j].swim();
                 // $(".whale").swim();
                    
                     

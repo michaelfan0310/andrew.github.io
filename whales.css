@@ -44,13 +44,12 @@
 @keyframes animateWhale1 {
     0% {opacity: 0;    }
     43% {opacity: 0;    }    
-    77% { opacity: 0.08;    }
+    77% { opacity: 0.1;    }
 }
 .whale3 {
     position: absolute;
-    top:-12%;
     right:-2%;
     z-index: 9;
-    opacity: 0.08;    
-    animation: animateShark2 23s linear infinite;
+    opacity: 0.05;    
+    animation: animateShark2 33s linear infinite;
  }
