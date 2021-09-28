@@ -157,7 +157,7 @@ var sketchProc = function (processingInstance) {
         }
         Salmon.prototype.swim = function () {
             this.X+= 5.8;
-            this.Y+= 1.2+1*Math.random(0.9,1);
+            this.Y+= 1.1+1*Math.random(0.9,1);
 
             if (this.X> (canvas.width * 0.79) && this.Y < 0.17 * canvas.height) {
                 this.X= 0;
@@ -166,6 +166,8 @@ var sketchProc = function (processingInstance) {
                 this.X= 0;
             } else if (this.Y > canvas.height) {
                 this.Y = 50 * Math.random(1);
+            } else if (this.Y > canvas.height*0.25 && this.Y < canvas.height*0.6){
+                this.Y=canvas.height*0.8;
             }
         }
         
@@ -191,15 +193,9 @@ var sketchProc = function (processingInstance) {
             salmon1.display();
             salmon1.swim();
             salmon2.display();
-            salmon2.swim();   
-            // salmon3.display();
-            // salmon3.swim();
-            // salmon4.display();
-            // salmon4.swim();
+            salmon2.swim();             
             salmon5.display();
-            salmon5.swim();
-            // salmon6.display();
-            // salmon6.swim();         
+            salmon5.swim();              
             
 
             
@@ -319,48 +315,48 @@ var sketchProc = function (processingInstance) {
             salmonss[38].swim();
             salmonss[39].display();
             salmonss[39].swim();
-            // salmonss[40].display();
-            // salmonss[40].swim();
-            // salmonss[41].display();
-            // salmonss[41].swim();
-            // salmonss[42].display();
-            // salmonss[42].swim();
-            // salmonss[43].display();
-            // salmonss[43].swim();
-            // salmonss[44].display();
-            // salmonss[44].swim();
-            // salmonss[45].display();
-            // salmonss[45].swim();
-            // salmonss[46].display();
-            // salmonss[46].swim();
-            // salmonss[47].display();
-            // salmonss[47].swim();
-            // salmonss[48].display();
-            // salmonss[48].swim();
-            // salmonss[49].display();
-            // salmonss[49].swim();
-            // salmonss[50].display();
-            // salmonss[50].swim();
-            // salmonss[51].display();
-            // salmonss[51].swim();
-            // salmonss[52].display();
-            // salmonss[52].swim();
-            // salmonss[53].display();
-            // salmonss[53].swim();
-            // salmonss[54].display();
-            // salmonss[54].swim();
-            // salmonss[55].display();
-            // salmonss[55].swim();
-            // salmonss[56].display();
-            // salmonss[56].swim();
-            // salmonss[57].display();
-            // salmonss[57].swim();
-            // salmonss[58].display();
-            // salmonss[58].swim();
-            // salmonss[59].display();
-            // salmonss[59].swim();
-            // salmonss[60].display();
-            // salmonss[60].swim();
+            salmonss[40].display();
+            salmonss[40].swim();
+            salmonss[41].display();
+            salmonss[41].swim();
+            salmonss[42].display();
+            salmonss[42].swim();
+            salmonss[43].display();
+            salmonss[43].swim();
+            salmonss[44].display();
+            salmonss[44].swim();
+            salmonss[45].display();
+            salmonss[45].swim();
+            salmonss[46].display();
+            salmonss[46].swim();
+            salmonss[47].display();
+            salmonss[47].swim();
+            salmonss[48].display();
+            salmonss[48].swim();
+            salmonss[49].display();
+            salmonss[49].swim();
+            salmonss[50].display();
+            salmonss[50].swim();
+            salmonss[51].display();
+            salmonss[51].swim();
+            salmonss[52].display();
+            salmonss[52].swim();
+            salmonss[53].display();
+            salmonss[53].swim();
+            salmonss[54].display();
+            salmonss[54].swim();
+            salmonss[55].display();
+            salmonss[55].swim();
+            salmonss[56].display();
+            salmonss[56].swim();
+            salmonss[57].display();
+            salmonss[57].swim();
+            salmonss[58].display();
+            salmonss[58].swim();
+            salmonss[59].display();
+            salmonss[59].swim();
+            salmonss[60].display();
+            salmonss[60].swim();
         };
     }
 };
