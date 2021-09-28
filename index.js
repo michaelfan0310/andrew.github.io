@@ -129,16 +129,16 @@ var sketchProc = function (processingInstance) {
 
         var fish4 = new Fish(new PVector(width/8, height/8), 54, 40);
         var bubbles4 = new ParticleSystem(fish4.getMouthPosition());
-        var fish5 = new Fish(new PVector(width/20, height/15), 100, 60);
+        var fish5 = new Fish(new PVector(width/15, height/15), 100, 60);
         var bubbles5 = new ParticleSystem(fish5.getMouthPosition());
 
         fishGroup=[];
             for (var i = 0; i < 102; i++) {
                 var fish_i = new Fish(new PVector(width / 20, height / 15), 30 + 2 * Math.random(1), 20 + 2 * Math.random(1),
                    );
-                var bubbles_i = new ParticleSystem(fish_i.getMouthPosition());
-
+                // var bubbles_i = new ParticleSystem(fish_i.getMouthPosition());
                 fishGroup.push(fish_i);
+               
             }
 
 
@@ -165,7 +165,7 @@ var sketchProc = function (processingInstance) {
             ellipse((this.X+ this.L * 0.3), (this.Y - this.H * 0.1), this.H / 5, this.H / 5);
         }
         Salmon.prototype.swim = function () {
-            this.X += 5.8 * Math.random(0.5, 1);
+            this.X += 5.8 * Math.random(0.8, 1);
             this.Y+= 1.1+1*Math.random(0.9,1);
 
             if (this.X> (canvas.width * 0.79) && this.Y < 0.17 * canvas.height) {   /#for Wales Mouth*/
@@ -176,7 +176,7 @@ var sketchProc = function (processingInstance) {
             } else if (this.Y > canvas.height) {
                 // this.X = 0.55*canvas.width * Math.random(1);
                 this.Y = 50 * Math.random(1);
-            } else if (this.Y > canvas.height*0.24 && this.Y < canvas.height*0.6){
+            } else if (this.Y > canvas.height*0.23 && this.Y < canvas.height*0.6){
                 this.Y=canvas.height*0.8;
             }
         }
