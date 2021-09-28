@@ -302,6 +302,11 @@
                 this.Y = 30;
             }
         }
+          //    $(".whale").prototype=Object.create(Salmon.prototype);
+            //    $(".whale").prototype.swim=function(){
+            //        this.X -= 3;
+            //        this.Y += 0.5;
+            //    }
                 var salmon = new Salmon(60,45,65,38);
                 var salmon1 = new Salmon(100, 160, 50, 29);
                 var salmon2 = new Salmon(150, 65, 65, 38);
@@ -311,19 +316,20 @@
                 var salmon6 = new Salmon(180, 680, 18, 10);
 
                 var Salmons=[];
+                
                 for (var i = 3; i < 100; i++) {                
                     var salmon_i = new Salmon(20 * (i - 1)*Math.random(1), 20*(i-1)+0.6*canvas.height, 20, 11);
                     Salmons.push(salmon_i);
                 }
-            //    $(".whale").prototype=Object.create(Salmon.prototype);
-            //    $(".whale").prototype.swim=function(){
-            //        this.X -= 3;
-            //        this.Y += 0.5;
-            //    }
+        //   newSalmons=Salmons.map()
 
                 draw = function() {
                     background(69, 176, 255, 5);
 
+                    // newSalmons.display();
+                    // newSalmons.swim();
+                // map(Salmons[index].display(), index);
+                // map(Salmons[index].swim(), index);
        
                 salmon.display();
                 salmon.swim();
@@ -359,21 +365,51 @@
             Salmons[7].display();
             Salmons[7].swim();
             Salmons[8].display();
-                    Salmons[8].swim();
-                    Salmons[9].display();
-                    Salmons[9].swim();
-                    Salmons[10].display();
-                    Salmons[10].swim();
-                    Salmons[11].display();
-                    Salmons[11].swim();
-                    Salmons[12].display();
-                    Salmons[12].swim();
-                    Salmons[13].display();
-                    Salmons[13].swim();
-                    Salmons[14].display();
-                    Salmons[14].swim();
-                    Salmons[15].display();
-                    Salmons[15].swim();
+            Salmons[8].swim();
+            Salmons[9].display();
+            Salmons[9].swim();
+            Salmons[10].display();
+            Salmons[10].swim();
+            Salmons[11].display();
+            Salmons[11].swim();
+            Salmons[12].display();
+            Salmons[12].swim();
+            Salmons[13].display();
+            Salmons[13].swim();
+            Salmons[14].display();
+            Salmons[14].swim();
+            Salmons[15].display();
+            Salmons[15].swim();
+            Salmons[16].display();
+            Salmons[16].swim();
+            Salmons[17].display();
+            Salmons[17].swim();
+            Salmons[18].display();
+            Salmons[18].swim();
+            Salmons[19].display();
+            Salmons[19].swim();
+            Salmons[20].display();
+            Salmons[20].swim();
+            Salmons[21].display();
+            Salmons[21].swim();
+            Salmons[22].display();
+            Salmons[22].swim();
+            Salmons[23].display();
+            Salmons[23].swim();
+            Salmons[24].display();
+            Salmons[24].swim();
+            Salmons[25].display();
+            Salmons[25].swim();
+            Salmons[26].display();
+            Salmons[26].swim();
+            Salmons[27].display();
+            Salmons[27].swim();
+            Salmons[28].display();
+            Salmons[28].swim();
+            Salmons[29].display();
+            Salmons[29].swim();
+            Salmons[30].display();
+            Salmons[30].swim();
             //     for (var j=0;j<Salmons.length;J++){
             //     Salmons[j].display();
             //     Salmons[j].swim();

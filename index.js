@@ -180,8 +180,8 @@ var sketchProc = function (processingInstance) {
 
         var salmonss = [];
             for (var i = 2; i < 102; i++) {
-        var salmon_i = new Salmon((15 * (i - 1) * Math.random(1)), 
-        (25 * (i - 1) * Math.random(1) + 0.6 * canvas.height), 
+        var salmon_i = new Salmon((8 * (i - 1) * Math.random(1)), 
+        (13 * (i - 1) * Math.random(1) + 0.6 * canvas.height), 
             19 +3.8* Math.random(1), 11+2.5*Math.random(1));
         salmonss.push(salmon_i);
         }
@@ -357,6 +357,47 @@ var sketchProc = function (processingInstance) {
             salmonss[59].swim();
             salmonss[60].display();
             salmonss[60].swim();
+            salmonss[61].display();
+            salmonss[61].swim();
+            salmonss[62].display();
+            salmonss[62].swim();
+            salmonss[63].display();
+            salmonss[63].swim();
+            salmonss[64].display();
+            salmonss[64].swim();
+            salmonss[65].display();
+            salmonss[65].swim();
+            salmonss[66].display();
+            salmonss[66].swim();
+            salmonss[67].display();
+            salmonss[67].swim();
+            salmonss[68].display();
+            salmonss[68].swim();
+            salmonss[69].display();
+            salmonss[69].swim();
+            salmonss[70].display();
+            salmonss[70].swim();
+            salmonss[71].display();
+            salmonss[71].swim();
+            salmonss[72].display();
+            salmonss[72].swim();
+            salmonss[73].display();
+            salmonss[73].swim();
+            salmonss[74].display();
+            salmonss[74].swim();
+            salmonss[75].display();
+            salmonss[75].swim();
+            salmonss[76].display();
+            salmonss[76].swim();
+            salmonss[77].display();
+            salmonss[77].swim();
+            salmonss[78].display();
+            salmonss[78].swim();
+            salmonss[79].display();
+            salmonss[79].swim();
+            salmonss[80].display();
+            salmonss[80].swim();
+           
         };
     }
 };
