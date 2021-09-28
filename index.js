@@ -156,15 +156,16 @@ var sketchProc = function (processingInstance) {
             ellipse((this.centerX + this.bodyLength * 0.3), (this.centerY - this.bodyHeight * 0.1), this.bodyHeight / 5, this.bodyHeight / 5);
         }
         Salmon.prototype.swim = function () {
-            this.centerX += 5.8 * Math.random(1);
+            this.centerX += 5.8;
             this.centerY += 1.5*Math.random(1);
 
             if (this.centerX > (canvas.width * 0.79) && this.centerY < 0.17 * canvas.height) {
                 this.centerX = 0;
+                this.centerY = canvas.height * Math.random(1)-200;
             } else if (this.centerX > canvas.width) {
                 this.centerX = 0;
             } else if (this.centerY > canvas.height) {
-                this.centerY = 30;
+                this.centerY = 50 * Math.random(1);
             }
         }
         
@@ -179,7 +180,7 @@ var sketchProc = function (processingInstance) {
             for (var i = 2; i < 102; i++) {
         var salmon_i = new Salmon((15 * (i - 1) * Math.random(1)), 
         (25 * (i - 1) * Math.random(1) + 0.6 * canvas.height), 
-        20, 11);
+            20, 12);
         Salmons.push(salmon_i);
         }
 
