@@ -157,7 +157,7 @@ var sketchProc = function (processingInstance) {
         }
         Salmon.prototype.swim = function () {
             this.centerX += 5.8;
-            this.centerY += 1.5*Math.random(1);
+            this.centerY += 1.5*Math.random(0.9,1);
 
             if (this.centerX > (canvas.width * 0.79) && this.centerY < 0.17 * canvas.height) {
                 this.centerX = 0;
@@ -180,7 +180,7 @@ var sketchProc = function (processingInstance) {
             for (var i = 2; i < 102; i++) {
         var salmon_i = new Salmon((15 * (i - 1) * Math.random(1)), 
         (25 * (i - 1) * Math.random(1) + 0.6 * canvas.height), 
-            20, 12);
+            19 +3.8* Math.random(1), 11+2.5*Math.random(1));
         Salmons.push(salmon_i);
         }
 
