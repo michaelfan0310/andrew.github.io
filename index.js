@@ -135,37 +135,37 @@ var sketchProc = function (processingInstance) {
 
         function Salmon(centerX, centerY, bodyLength, bodyHeight) {
             // this.position = position.get();
-            this.centerX = centerX;
-            this.centerY = centerY;
-            this.bodyLength = bodyLength;
-            this.bodyHeight = bodyHeight;
+            this.X= centerX;
+            this.Y = centerY;
+            this.L = bodyLength;
+            this.H = bodyHeight;
         }
-        // var EyeX= (this.centerX + this.bodyLength * 0.3);
-        // var EyeY= (this.centerY - this.bodyHeight * 0.4);
+        // var EyeX= (this.X+ this.L * 0.3);
+        // var EyeY= (this.Y - this.H * 0.4);
 
         Salmon.prototype.display = function () {
             noStroke();
             // fill(233, 35, 35,150);
-            fill((this.centerX/6+this.centerY/5+100), (this.centerY/4 + this.centerX/10-50), (this.cenertY/8-100), 130);
-            ellipse(this.centerX, this.centerY, this.bodyLength, this.bodyHeight);
-            fill((this.centerX/5)+80, (this.centerX/8 + 30), (this.cenertY/8), 130);
-            triangle(this.centerX - this.bodyLength / 2, this.centerY, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY - this.bodyHeight / 2, this.centerX - this.bodyLength / 2 - this.bodyLength / 4, this.centerY + this.bodyHeight / 2);
+            fill((this.X/6+this.Y/5+100), (this.Y/4 + this.X/10-50), (this.Y/8-100), 130);
+            ellipse(this.X, this.Y, this.L, this.H);
+            fill((this.X/5)+80, (this.X/8 + 30), (this.cenertY/8), 130);
+            triangle(this.X- this.L / 2, this.Y, this.X- this.L / 2 - this.L / 4, this.Y - this.H / 2, this.X- this.L / 2 - this.L / 4, this.Y + this.H / 2);
 
             // eye
             fill(33, 33, 33);
-            ellipse((this.centerX + this.bodyLength * 0.3), (this.centerY - this.bodyHeight * 0.1), this.bodyHeight / 5, this.bodyHeight / 5);
+            ellipse((this.X+ this.L * 0.3), (this.Y - this.H * 0.1), this.H / 5, this.H / 5);
         }
         Salmon.prototype.swim = function () {
-            this.centerX += 5.8;
-            this.centerY += 1.5*Math.random(0.9,1);
+            this.X+= 5.8;
+            this.Y += 1.5*Math.random(0.9,1);
 
-            if (this.centerX > (canvas.width * 0.79) && this.centerY < 0.17 * canvas.height) {
-                this.centerX = 0;
-                this.centerY = canvas.height * Math.random(1)-200;
-            } else if (this.centerX > canvas.width) {
-                this.centerX = 0;
-            } else if (this.centerY > canvas.height) {
-                this.centerY = 50 * Math.random(1);
+            if (this.X> (canvas.width * 0.79) && this.Y < 0.17 * canvas.height) {
+                this.X= 0;
+                this.Y = canvas.height * Math.random(1)-200;
+            } else if (this.X> canvas.width) {
+                this.X= 0;
+            } else if (this.Y > canvas.height) {
+                this.Y = 50 * Math.random(1);
             }
         }
         
