@@ -46,10 +46,38 @@
     43% {opacity: 0;    }    
     77% { opacity: 0.1;    }
 }
+
 .whale3 {
     position: absolute;
     right:-2%;
     z-index: 9;
     opacity: 0.05;    
-    animation: animateShark2 33s linear infinite;
+    animation: animateWales 23s linear infinite;
  }
+ 
+ @keyframes animateWales {
+    0% {
+        top: 15%;
+        left: 99%;
+      
+    }
+    25% {
+        top: 13%;
+        left: 75%;
+        
+    }
+    50% {
+        top: 12%;
+        left: 55%;
+        
+    }
+    75% {
+        top: 10%;
+        left: 25%;
+       
+    }
+    100% {
+        top: 5%;
+        left: -23%;       
+    }
+}
