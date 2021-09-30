@@ -381,7 +381,7 @@
 
 .stingay {
     position: absolute;
-    top: 73%;
+    top: 71%;
     left: 5%;
     z-index: 11;
     animation: animatestingay 15s linear infinite;
@@ -517,7 +517,7 @@
 
 .turtle {
     position: absolute;
-    top: 85%;
+    top: 82%;
     z-index: 11;
     animation: animateturtle 50s linear infinite;
 }
