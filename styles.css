@@ -381,7 +381,7 @@
 
 .stingay {
     position: absolute;
-    top: 71%;
+    top: 85%;
     left: 5%;
     z-index: 11;
     animation: animatestingay 15s linear infinite;
@@ -389,23 +389,23 @@
 
 @keyframes animatestingay {
     0% {
-        top: 89%;
+       
         left: 3%;
     }
     26% {
-        top: 89%;
+        
         left: 25%;
     }
     50% {
-        top: 88%;
+       
         left: 55%;
     }
     76% {
-        top: 89%;
+        
         left: 75%;
     }
     100% {
-        top: 89%;
+        top: 87%;
         left: 100%;
     }
 }
@@ -523,24 +523,19 @@
 }
 
 @keyframes animateturtle {
-    0% {
-        bottom: 0;
+    0% {        
         left: 15%;
     }
-    25% {
-        bottom: 0;
+    25% {        
         left: 18%;
     }
     50% {
-        botttom: 0;
-        left: 21%;
+         left: 21%;
     }
-    66% {
-        bottom: 0;
+    66% {    
         left: 24%;
     }
-    100% {
-        bottom: 0;
+    100% {        
         left: 27%;
     }
 }
