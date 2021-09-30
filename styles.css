@@ -381,7 +381,7 @@
 
 .stingay {
     position: absolute;
-    top: 75%;
+    top: 73%;
     left: 5%;
     z-index: 11;
     animation: animatestingay 15s linear infinite;

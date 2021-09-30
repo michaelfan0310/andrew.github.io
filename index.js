@@ -170,7 +170,7 @@ var sketchProc = function (processingInstance) {
 
             if (this.X> (canvas.width * 0.79) && this.Y < 0.17 * canvas.height) {   /#for Wales Mouth*/
                 this.X= 0;
-                this.Y = canvas.height * Math.random(0.9,1)-300;
+                this.Y = canvas.height * Math.random(0.9,1)*0.7;
             } else if (this.X> canvas.width) {
                 this.X= 0;
             } else if (this.Y > canvas.height) {
