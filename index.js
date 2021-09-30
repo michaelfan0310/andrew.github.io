@@ -92,7 +92,7 @@ var sketchProc = function (processingInstance) {
 
         };
 
-        Fish.prototype.display = function () {
+            Fish.prototype.display = function () {
             noStroke();
             fill(255, 191, 0,120);
             triangle(this.position.x - this.width / 2 + 10, this.position.y,
@@ -134,9 +134,9 @@ var sketchProc = function (processingInstance) {
 
         fishGroup=[];
             for (var i = 0; i < 102; i++) {
-                var fish_i = new Fish(new PVector(width / 20, height / 15), 30 + 2 * Math.random(1), 20 + 2 * Math.random(1),
+                var fish_i = new Fish(new PVector(30 / 20, 20 / 15), 30 + 2 * Math.random(1), 20 + 2 * Math.random(1),
                    );
-                // var bubbles_i = new ParticleSystem(fish_i.getMouthPosition());
+                var bubbles_i = new ParticleSystem(fish_i.getMouthPosition());
                 fishGroup.push(fish_i);
                
             }
@@ -170,13 +170,13 @@ var sketchProc = function (processingInstance) {
 
             if (this.X> (canvas.width * 0.79) && this.Y < 0.17 * canvas.height) {   /#for Wales Mouth*/
                 this.X= 0;
-                this.Y = canvas.height * Math.random(0.9,1)-200;
+                this.Y = canvas.height * Math.random(0.9,1)-300;
             } else if (this.X> canvas.width) {
                 this.X= 0;
             } else if (this.Y > canvas.height) {
                 // this.X = 0.55*canvas.width * Math.random(1);
-                this.Y = 50 * Math.random(1);
-            } else if (this.Y > canvas.height*0.23 && this.Y < canvas.height*0.6){
+                this.Y = 30 * Math.random(1);
+            } else if (this.Y > canvas.height*0.23 && this.Y < canvas.height*0.52){
                 this.Y=canvas.height*0.8;
             }
         }
@@ -190,9 +190,9 @@ var sketchProc = function (processingInstance) {
 
         var salmonss = [];
             for (var i = 2; i < 102; i++) {
-        var salmon_i = new Salmon((8 * (i - 1) * Math.random(1)), 
-        (13 * (i - 1) * Math.random(1) + 0.6 * canvas.height), 
-            19 +3.8* Math.random(1), 11+2.5*Math.random(1));
+        var salmon_i = new Salmon((5 * (i - 1) * Math.random(1)), 
+        (6 * (i - 1) * Math.random(1) + 0.6 * canvas.height), 
+            15 +4.8* Math.random(0,2), 8+4.5*Math.random(0,2));
         salmonss.push(salmon_i);
         }
 
@@ -407,6 +407,26 @@ var sketchProc = function (processingInstance) {
             salmonss[79].swim();
             salmonss[80].display();
             salmonss[80].swim();
+            salmonss[81].display();
+            salmonss[81].swim();
+            salmonss[82].display();
+            salmonss[82].swim();
+            salmonss[83].display();
+            salmonss[83].swim();
+            salmonss[84].display();
+            salmonss[84].swim();
+            salmonss[85].display();
+            salmonss[85].swim();
+            salmonss[86].display();
+            salmonss[86].swim();
+            salmonss[87].display();
+            salmonss[87].swim();
+            salmonss[88].display();
+            salmonss[88].swim();
+            salmonss[89].display();
+            salmonss[89].swim();
+            salmonss[90].display();
+            salmonss[90].swim();
 
             // if (frameCount % 17 === 1) {
             //     bubbles[0].addParticle();
