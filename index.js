@@ -71,7 +71,7 @@ var sketchProc = function (processingInstance) {
             }
         };
 
-        function Fish(position,width,height) {
+            function Fish(position, width, height) {
             this.position = position.get();
             this.width = width;
             this.height = height;
@@ -134,7 +134,7 @@ var sketchProc = function (processingInstance) {
 
         fishGroup=[];
             for (var i = 0; i < 102; i++) {
-                var fish_i = new Fish(new PVector(30 / 20, 20 / 15), 30 + 2 * Math.random(1), 20 + 2 * Math.random(1),
+                var fish_i = new Fish(new PVector(30 / 20+i/20, 20 / 15), 20 + 2 * Math.random(1), 13 + 2 * Math.random(1),
                    );
                 var bubbles_i = new ParticleSystem(fish_i.getMouthPosition());
                 fishGroup.push(fish_i);
@@ -190,8 +190,8 @@ var sketchProc = function (processingInstance) {
 
         var salmonss = [];
             for (var i = 2; i < 102; i++) {
-        var salmon_i = new Salmon((5 * (i - 1) * Math.random(1)), 
-        (6 * (i - 1) * Math.random(1) + 0.6 * canvas.height), 
+        var salmon_i = new Salmon((4* (i - 1) * Math.random(1)), 
+        (5 * (i - 1) * Math.random(1) + 0.6 * canvas.height), 
             15 +4.8* Math.random(0,2), 8+4.5*Math.random(0,2));
         salmonss.push(salmon_i);
         }
@@ -468,6 +468,27 @@ var sketchProc = function (processingInstance) {
             // fishGroup[9].display();
             // fishGroup[10].swim();
             // fishGroup[10].display();
+           
+            // fishGroup[11].swim();
+            // fishGroup[11].display();
+            // fishGroup[12].swim();
+            // fishGroup[12].display();
+            // fishGroup[13].swim();
+            // fishGroup[13].display();
+            // fishGroup[14].swim();
+            // fishGroup[14].display();
+            // fishGroup[15].swim();
+            // fishGroup[15].display();
+            // fishGroup[16].swim();
+            // fishGroup[16].display();
+            // fishGroup[17].swim();
+            // fishGroup[17].display();
+            // fishGroup[18].swim();
+            // fishGroup[18].display();
+            // fishGroup[19].swim();
+            // fishGroup[19].display();
+            // fishGroup[20].swim();
+            // fishGroup[20].display();
                       
         };
     }
