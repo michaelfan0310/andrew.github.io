@@ -178,6 +178,7 @@ var sketchProc = function (processingInstance) {
                 this.Y = 30 * Math.random(1);
             } else if (this.Y > canvas.height*0.23 && this.Y < canvas.height*0.52){
                 this.Y=canvas.height*0.8;
+               
             }
         }
         
