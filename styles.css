@@ -373,7 +373,7 @@
 
 .shark2 {
     position: absolute;
-    top: 25%;
+    top: 28%;
     left: 95%;
     z-index: 1;
     animation: animateShark2 3s linear infinite;

@@ -3,10 +3,10 @@
     top: 10%;
     right: 1%;
     z-index: 9;
-    width: 5%;
-    height: 6%;
+    width: 3%;
+    height: 5%;
     opacity: 0.9;    
-    animation:  animateTurtling 30s linear infinite;    
+    animation:  animateTurtling 25s linear infinite;    
 }
 
 .turtling33{
@@ -14,8 +14,8 @@
     top: 71%;
     right: 1%;
     z-index: 8;
-    width: 5%;
-    height: 6%;
+    width: 4%;
+    height: 5%;
     opacity: 0.9;    
     animation:  animateTurtling 20s linear infinite;    
 }
@@ -76,7 +76,7 @@
         
         right: 102%;
         opacity: 0.9;
-        transform: rotateX(0deg);
+        transform: rotateX(5deg);
         transform: rotateY(15deg);       
     }
 }
@@ -85,10 +85,10 @@
     top: 11%;
     right: 1%;
     z-index: 9;
-    width: 4%;
+    width: 3%;
     height: 5%;
     opacity: 0;    
-    animation:  animateTurtling4 30s linear infinite;    
+    animation:  animateTurtling4 25s linear infinite;    
 }
 .turtling44 {
     position: absolute;
