@@ -1,7 +1,7 @@
 
 var sketchProc = function (processingInstance) {
     
-        var canvas = document.querySelector('canvas');
+        var canvas = document.querySelector('#mycanvas');
         var c = canvas.getContext('2d');
 
         canvas.width = window.innerWidth;
