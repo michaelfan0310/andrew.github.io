@@ -192,7 +192,7 @@ var sketchProc = function (processingInstance) {
         var salmonss = [];
             for (var i = 2; i < 102; i++) {
         var salmon_i = new Salmon((4* (i - 1) * Math.random(1)), 
-        (5 * (i - 1) * Math.random(1) + 0.6 * canvas.height), 
+        (5 * (i - 1) * Math.random(1) + 0.85 * canvas.height), 
             15 +4.8* Math.random(0,2), 8+4.5*Math.random(0,2));
         salmonss.push(salmon_i);
         }

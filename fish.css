@@ -1,0 +1,63 @@
+.fish01 {
+    position: absolute;
+    top: 5%;
+    right: 25%;
+  
+    z-index: 11;
+    animation: fish0101 8s  ease-out infinite;
+}
+
+@keyframes fish0101 {
+    0% {
+      top: 2%;
+       opacity:1;
+    }
+    25% {
+        top:25%;
+         opacity:0.1;
+      }
+    35%{
+        top: 35%;
+       opacity:0;
+    }
+    50% {
+      top: 46%;
+       opacity:0;
+       
+    }
+    100% {
+      top: 58%;
+       opacity:0;
+    }
+  }
+
+  .fish02 {
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    opacity:0.6;
+    z-index: 11;
+    animation: fish0202 8s  ease-out infinite;
+}
+
+@keyframes fish0202 {
+    0% {
+      top: 10%;
+       opacity:0;
+    }
+    35%{
+        top: 35%;
+       opacity:0.7;
+    }
+    50% {
+      top: 46%;
+       opacity:1;
+       width:33%;
+       
+    }
+    100% {
+      top: 58%;
+       opacity:1;
+       width:39%;
+    }
+  }
